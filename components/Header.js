@@ -1,17 +1,42 @@
 import Link from 'next/link';
+import {
+  NavLink,
+  Flex
+} from 'theme-ui'
+import { useColorMode } from 'theme-ui'
+import { jsx } from 'theme-ui'
 
-const Header = () => (
-<ul className="flex mb-5">
-  <li className="mr-3">
-  <Link href="/">
-    <a className="block py-2 px-4 text-gray-900">Home</a>
-    </Link>  </li>
-    <li className="mr-3">
-  <Link href="/about">
-    <a className="block py-2 px-4 text-gray-900">About</a>
-    </Link>
-  </li>
-</ul>
-);
-
-export default Header;
+export default props => {
+  const [colorMode, setColorMode] = useColorMode()
+  return (
+    <Flex as='nav' 
+    sx={{
+      px: 3, // padding-left & padding-right
+      // paddingX: 3 will also work
+      py: 4, // padding-top & padding-bottom
+      mb: 3, // margin-bottom
+    }}
+    >
+      <Link href="/" passHref>
+        <NavLink p={2}>
+          Home
+      </NavLink>
+      </Link>
+      <Link href="/About" passHref>
+        <NavLink p={2}>
+          About
+      </NavLink>
+      </Link>
+      <NavLink p={2} border={2}
+        onClick={e => {
+          setColorMode(colorMode === 'default' ? 'dark' : 'default')
+        }}
+        sx={{
+          variant: 'links.nav.outlined',
+        }}
+      >
+        {colorMode === 'default' ? 'Dark' : 'Light'}
+      </NavLink>
+    </Flex>
+  )
+}

@@ -1,8 +1,13 @@
-export default function About() {
-	return (
-		<div className="p-4 shadow rounded bg-white">
-			<h1 className="text-purple-500 leading-normal">ABOUT</h1>
-			<p className="text-gray-500">with Tailwind CSS</p>
-		</div>
-	);
-}
+/** @jsx jsx */
+import { jsx, Styled } from 'theme-ui'
+
+export default props => (
+  <div
+    sx={{
+      maxWidth: 1024,
+      mx: 'auto',
+      p: 3,
+    }}>
+    <Styled.h1>About</Styled.h1>
+  </div>
+)

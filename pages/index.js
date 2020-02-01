@@ -1,6 +1,19 @@
-export default () => (
-    <div className="p-4 shadow rounded bg-white">
-      <h1 className="text-purple-500 leading-normal">HOME</h1>
-      <p className="text-gray-500">with Tailwind CSS</p>
-    </div>
+/** @jsx jsx */
+import {
+  jsx,
+  Heading,
+  Box,
+  Flex
+} from 'theme-ui'
+
+export default props => (
+  <Flex>
+    <Box p={2} bg='muted' sx={{ flex: '1 1 auto' }}>
+      <Heading>Home 1st column</Heading>
+    </Box>
+    <Box p={2} bg='muted' sx={{ flex: '1 1 auto' }}>
+      <Heading>Home 2nd column</Heading>
+
+    </Box>
+  </Flex>
 )
