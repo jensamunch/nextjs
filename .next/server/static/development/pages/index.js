@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -104,35 +104,68 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rebass */ "rebass");
+/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/jensamunch/Documents/nextjs/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-/* harmony default export */ __webpack_exports__["default"] = (() => __jsx("div", {
-  className: "p-4 shadow rounded bg-white",
+
+/* harmony default export */ __webpack_exports__["default"] = (({
+  image,
+  title,
+  description
+}) => __jsx(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+  width: 256,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 2
+    lineNumber: 14
   },
   __self: undefined
-}, __jsx("h1", {
-  className: "text-purple-500 leading-normal",
+}, __jsx(rebass__WEBPACK_IMPORTED_MODULE_1__["Card"], {
+  sx: {
+    p: 1,
+    borderRadius: 2,
+    boxShadow: '0 0 16px rgba(0, 0, 0, .25)'
+  },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 3
+    lineNumber: 15
   },
   __self: undefined
-}, "HOME"), __jsx("p", {
-  className: "text-gray-500",
+}, __jsx(rebass__WEBPACK_IMPORTED_MODULE_1__["Image"], {
+  src: image,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 4
+    lineNumber: 21
   },
   __self: undefined
-}, "with Tailwind CSS")));
+}), __jsx(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+  px: 2,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 22
+  },
+  __self: undefined
+}, __jsx(rebass__WEBPACK_IMPORTED_MODULE_1__["Heading"], {
+  fontSize: 8,
+  color: "primary",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 23
+  },
+  __self: undefined
+}, "Hello"), __jsx(rebass__WEBPACK_IMPORTED_MODULE_1__["Text"], {
+  fontSize: 0,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 28
+  },
+  __self: undefined
+}, description, "You can edit this code")))));
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -152,6 +185,17 @@ module.exports = __webpack_require__(/*! /Users/jensamunch/Documents/nextjs/page
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "rebass":
+/*!*************************!*\
+  !*** external "rebass" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("rebass");
 
 /***/ })
 

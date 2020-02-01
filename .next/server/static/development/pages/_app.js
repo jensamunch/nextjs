@@ -93,41 +93,6 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/Footer.js":
-/*!******************************!*\
-  !*** ./components/Footer.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/jensamunch/Documents/nextjs/components/Footer.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-const Footer = () => __jsx("ul", {
-  className: "flex mt-5 mr-3",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 2
-  },
-  __self: undefined
-}, __jsx("li", {
-  className: "text-gray-900",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 3
-  },
-  __self: undefined
-}, "Footer"));
-
-/* harmony default export */ __webpack_exports__["default"] = (Footer);
-
-/***/ }),
-
 /***/ "./components/Header.js":
 /*!******************************!*\
   !*** ./components/Header.js ***!
@@ -141,61 +106,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var rebass_styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rebass/styled-components */ "rebass/styled-components");
+/* harmony import */ var rebass_styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(rebass_styled_components__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/jensamunch/Documents/nextjs/components/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Header = () => __jsx("ul", {
-  className: "flex mb-5",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, __jsx("li", {
-  className: "mr-3",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, __jsx("a", {
-  className: "block py-2 px-4 text-gray-900",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}, "Home")), "  "), __jsx("li", {
-  className: "mr-3",
+
+const Header = () => __jsx(rebass_styled_components__WEBPACK_IMPORTED_MODULE_2__["Flex"], {
+  px: 2,
+  color: "white",
+  bg: "black",
+  alignItems: "center",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 9
   },
   __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/about",
+}, __jsx(rebass_styled_components__WEBPACK_IMPORTED_MODULE_2__["Text"], {
+  p: 2,
+  fontWeight: "bold",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
+    lineNumber: 14
+  },
+  __self: undefined
+}, "Rebass"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
   },
   __self: undefined
 }, __jsx("a", {
-  className: "block py-2 px-4 text-gray-900",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11
+    lineNumber: 16
   },
   __self: undefined
-}, "About"))));
+}, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/about",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 18
+  },
+  __self: undefined
+}, __jsx("a", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 19
+  },
+  __self: undefined
+}, "About")));
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 
@@ -1883,10 +1846,12 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
-/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/style.css */ "./styles/style.css");
-/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_style_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _themes_theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../themes/theme */ "./themes/theme.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
+/* harmony import */ var rebass_styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rebass/styled-components */ "rebass/styled-components");
+/* harmony import */ var rebass_styled_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(rebass_styled_components__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/jensamunch/Documents/nextjs/pages/_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -1897,13 +1862,18 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 
+const Style = styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"]`
+* { box-sizing: border-box; }
+body { margin:0; }
+`;
+
 const Layout = ({
   children
 }) => __jsx("div", {
   className: "layout",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
+    lineNumber: 14
   },
   __self: undefined
 }, children);
@@ -1911,42 +1881,90 @@ const Layout = ({
 /* harmony default export */ __webpack_exports__["default"] = (({
   Component,
   pageProps
-}) => __jsx(Layout, {
+}) => __jsx(styled_components__WEBPACK_IMPORTED_MODULE_1__["ThemeProvider"], {
+  theme: _themes_theme__WEBPACK_IMPORTED_MODULE_2__["default"],
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
+    lineNumber: 17
   },
   __self: undefined
-}, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+}, __jsx(Style, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
+    lineNumber: 18
   },
   __self: undefined
-}), __jsx(Component, _extends({}, pageProps, {
+}), __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11
+    lineNumber: 19
   },
   __self: undefined
-})), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+}), __jsx(rebass_styled_components__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+  color: "black",
+  bg: "yellow",
+  p: 3,
+  height: 40,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 20
   },
   __self: undefined
-})));
+}, "Hello"), __jsx(Component, _extends({}, pageProps, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 23
+  },
+  __self: undefined
+}))));
 
 /***/ }),
 
-/***/ "./styles/style.css":
-/*!**************************!*\
-  !*** ./styles/style.css ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./themes/theme.js":
+/*!*************************!*\
+  !*** ./themes/theme.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// example theme.js
+/* harmony default export */ __webpack_exports__["default"] = ({
+  breakpoints: ['40em', '52em', '64em'],
+  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
+  colors: {
+    blue: '#07c',
+    lightgray: '#f6f6ff'
+  },
+  space: [0, 4, 8, 16, 32, 64, 128, 256],
+  fonts: {
+    body: 'arial',
+    heading: 'arial',
+    monospace: 'Menlo, monospace'
+  },
+  fontWeights: {
+    body: 400,
+    heading: 700,
+    bold: 700
+  },
+  lineHeights: {
+    body: 1.5,
+    heading: 1.25
+  },
+  shadows: {
+    small: '0 0 4px rgba(0, 0, 0, .125)',
+    large: '0 0 24px rgba(0, 0, 0, .125)'
+  },
+  variants: {},
+  text: {},
+  buttons: {
+    primary: {
+      color: 'white',
+      bg: 'primary'
+    }
+  }
+});
 
 /***/ }),
 
@@ -2058,6 +2076,28 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "rebass/styled-components":
+/*!*******************************************!*\
+  !*** external "rebass/styled-components" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("rebass/styled-components");
+
+/***/ }),
+
+/***/ "styled-components":
+/*!************************************!*\
+  !*** external "styled-components" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-components");
 
 /***/ }),
 

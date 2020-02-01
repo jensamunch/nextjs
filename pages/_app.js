@@ -1,14 +1,25 @@
 import React from 'react'
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import "../styles/style.css"
+import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
+import theme from '../themes/theme'
+import Header from '../components/Header'
+import {
+    Box
+  } from "rebass/styled-components";
+
+const Style = createGlobalStyle`
+* { box-sizing: border-box; }
+body { margin:0; }
+`
 
 const Layout = ({ children }) => <div className="layout">{children}</div>
 
 export default ({ Component, pageProps }) => (
-    <Layout>
+    <ThemeProvider theme={theme}>
+        <Style />
         <Header />
+        <Box color="black" bg="yellow" p={3} height={40}>
+            Hello
+        </Box>
         <Component {...pageProps} />
-        <Footer />
-    </Layout>
+    </ThemeProvider>
 )

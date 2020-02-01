@@ -1,17 +1,25 @@
 import Link from 'next/link';
+import {
+  Flex,
+  Text,
+  Box,
+} from 'rebass/styled-components'
 
 const Header = () => (
-<ul className="flex mb-5">
-  <li className="mr-3">
-  <Link href="/">
-    <a className="block py-2 px-4 text-gray-900">Home</a>
-    </Link>  </li>
-    <li className="mr-3">
-  <Link href="/about">
-    <a className="block py-2 px-4 text-gray-900">About</a>
+  <Flex
+    px={2}
+    color='white'
+    bg='black'
+    alignItems='center'>
+    <Text p={2} fontWeight='bold'>Rebass</Text>
+    <Link href="/">
+      <a>Home</a>
     </Link>
-  </li>
-</ul>
+    <Link href="/about">
+      <a>About</a>
+    </Link>
+  </Flex>
 );
 
 export default Header;
+
