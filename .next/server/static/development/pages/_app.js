@@ -1848,7 +1848,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _themes_theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../themes/theme */ "./themes/theme.js");
+/* harmony import */ var _rebass_preset__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @rebass/preset */ "@rebass/preset");
+/* harmony import */ var _rebass_preset__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_rebass_preset__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
 /* harmony import */ var rebass_styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rebass/styled-components */ "rebass/styled-components");
 /* harmony import */ var rebass_styled_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(rebass_styled_components__WEBPACK_IMPORTED_MODULE_4__);
@@ -1858,6 +1859,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 
+ //import theme from '../themes/theme'
 
 
 
@@ -1873,7 +1875,7 @@ const Layout = ({
   className: "layout",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 14
+    lineNumber: 18
   },
   __self: undefined
 }, children);
@@ -1882,89 +1884,55 @@ const Layout = ({
   Component,
   pageProps
 }) => __jsx(styled_components__WEBPACK_IMPORTED_MODULE_1__["ThemeProvider"], {
-  theme: _themes_theme__WEBPACK_IMPORTED_MODULE_2__["default"],
+  theme: _rebass_preset__WEBPACK_IMPORTED_MODULE_2___default.a,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 17
+    lineNumber: 21
   },
   __self: undefined
 }, __jsx(Style, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18
+    lineNumber: 22
   },
   __self: undefined
 }), __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19
+    lineNumber: 23
   },
   __self: undefined
 }), __jsx(rebass_styled_components__WEBPACK_IMPORTED_MODULE_4__["Box"], {
-  color: "black",
-  bg: "yellow",
   p: 3,
   height: 40,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
+    lineNumber: 24
   },
   __self: undefined
-}, "Hello"), __jsx(Component, _extends({}, pageProps, {
+}, "Hello"), __jsx(rebass_styled_components__WEBPACK_IMPORTED_MODULE_4__["Heading"], {
+  fontSize: [5, 6, 7],
+  color: "primary",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 23
+    lineNumber: 27
+  },
+  __self: undefined
+}, "Hello"), __jsx(rebass_styled_components__WEBPACK_IMPORTED_MODULE_4__["Button"], {
+  variant: "outline",
+  mr: 2,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 32
+  },
+  __self: undefined
+}, "Outline"), __jsx(Component, _extends({}, pageProps, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 33
   },
   __self: undefined
 }))));
-
-/***/ }),
-
-/***/ "./themes/theme.js":
-/*!*************************!*\
-  !*** ./themes/theme.js ***!
-  \*************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// example theme.js
-/* harmony default export */ __webpack_exports__["default"] = ({
-  breakpoints: ['40em', '52em', '64em'],
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
-  colors: {
-    blue: '#07c',
-    lightgray: '#f6f6ff'
-  },
-  space: [0, 4, 8, 16, 32, 64, 128, 256],
-  fonts: {
-    body: 'arial',
-    heading: 'arial',
-    monospace: 'Menlo, monospace'
-  },
-  fontWeights: {
-    body: 400,
-    heading: 700,
-    bold: 700
-  },
-  lineHeights: {
-    body: 1.5,
-    heading: 1.25
-  },
-  shadows: {
-    small: '0 0 4px rgba(0, 0, 0, .125)',
-    large: '0 0 24px rgba(0, 0, 0, .125)'
-  },
-  variants: {},
-  text: {},
-  buttons: {
-    primary: {
-      color: 'white',
-      bg: 'primary'
-    }
-  }
-});
 
 /***/ }),
 
@@ -1977,6 +1945,17 @@ __webpack_require__.r(__webpack_exports__);
 
 module.exports = __webpack_require__(/*! private-next-pages/_app.js */"./pages/_app.js");
 
+
+/***/ }),
+
+/***/ "@rebass/preset":
+/*!*********************************!*\
+  !*** external "@rebass/preset" ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@rebass/preset");
 
 /***/ }),
 

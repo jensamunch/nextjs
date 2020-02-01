@@ -1,10 +1,14 @@
 import React from 'react'
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
-import theme from '../themes/theme'
+//import theme from '../themes/theme'
+import preset from '@rebass/preset'
+
 import Header from '../components/Header'
 import {
-    Box
-  } from "rebass/styled-components";
+    Box,
+    Button,
+    Heading
+} from "rebass/styled-components";
 
 const Style = createGlobalStyle`
 * { box-sizing: border-box; }
@@ -14,12 +18,18 @@ body { margin:0; }
 const Layout = ({ children }) => <div className="layout">{children}</div>
 
 export default ({ Component, pageProps }) => (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={preset}>
         <Style />
         <Header />
-        <Box color="black" bg="yellow" p={3} height={40}>
+        <Box p={3} height={40}>
             Hello
         </Box>
+        <Heading
+            fontSize={[5, 6, 7]}
+            color='primary'>
+            Hello
+    </Heading>
+        <Button variant='outline' mr={2}>Outline</Button>
         <Component {...pageProps} />
     </ThemeProvider>
 )

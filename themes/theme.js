@@ -4,6 +4,10 @@ export default {
     fontSizes: [
       12, 14, 16, 20, 24, 32, 48, 64
     ],
+    box: {
+      color: '#fff',
+      bg: '#ffff00'
+    },
     colors: {
       blue: '#07c',
       lightgray: '#f6f6ff'
