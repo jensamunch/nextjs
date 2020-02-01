@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -104,68 +104,59 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rebass */ "rebass");
-/* harmony import */ var rebass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rebass__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var theme_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! theme-ui */ "theme-ui");
+/* harmony import */ var theme_ui__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(theme_ui__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/jensamunch/Documents/nextjs/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-/* harmony default export */ __webpack_exports__["default"] = (({
-  image,
-  title,
-  description
-}) => __jsx(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
-  width: 256,
+/** @jsx jsx */
+
+/* harmony default export */ __webpack_exports__["default"] = (props => Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Flex"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}, Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+  p: 2,
+  bg: "muted",
+  sx: {
+    flex: '1 1 auto'
+  },
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}, Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Heading"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
+  },
+  __self: undefined
+}, "Home 1st column")), Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+  p: 2,
+  bg: "muted",
+  sx: {
+    flex: '1 1 auto'
+  },
   __source: {
     fileName: _jsxFileName,
     lineNumber: 14
   },
   __self: undefined
-}, __jsx(rebass__WEBPACK_IMPORTED_MODULE_1__["Card"], {
-  sx: {
-    p: 1,
-    borderRadius: 2,
-    boxShadow: '0 0 16px rgba(0, 0, 0, .25)'
-  },
+}, Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Heading"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 15
   },
   __self: undefined
-}, __jsx(rebass__WEBPACK_IMPORTED_MODULE_1__["Image"], {
-  src: image,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 21
-  },
-  __self: undefined
-}), __jsx(rebass__WEBPACK_IMPORTED_MODULE_1__["Box"], {
-  px: 2,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 22
-  },
-  __self: undefined
-}, __jsx(rebass__WEBPACK_IMPORTED_MODULE_1__["Heading"], {
-  fontSize: 8,
-  color: "primary",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 23
-  },
-  __self: undefined
-}, "Hello"), __jsx(rebass__WEBPACK_IMPORTED_MODULE_1__["Text"], {
-  fontSize: 0,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 28
-  },
-  __self: undefined
-}, description, "You can edit this code")))));
+}, "Home 2nd column"))));
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -188,14 +179,14 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ "rebass":
-/*!*************************!*\
-  !*** external "rebass" ***!
-  \*************************/
+/***/ "theme-ui":
+/*!***************************!*\
+  !*** external "theme-ui" ***!
+  \***************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("rebass");
+module.exports = require("theme-ui");
 
 /***/ })
 

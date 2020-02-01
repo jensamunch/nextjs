@@ -1,16 +1,13 @@
-import {
-	Box
-  } from 'rebass'
+/** @jsx jsx */
+import { jsx, Styled } from 'theme-ui'
 
-export default function About() {
-	return (
-		<Box
-			p={5}
-			fontSize={4}
-			width={[1, 1, 1 / 2]}
-			color='white'
-			bg='red'>
-			BoxBOX
-		</Box>
-	);
-}
+export default props => (
+  <div
+    sx={{
+      maxWidth: 1024,
+      mx: 'auto',
+      p: 3,
+    }}>
+    <Styled.h1>About</Styled.h1>
+  </div>
+)

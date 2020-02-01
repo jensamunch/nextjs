@@ -1,35 +1,19 @@
+/** @jsx jsx */
 import {
-  Box,
-  Card,
-  Image,
+  jsx,
   Heading,
-  Text
-} from 'rebass'
+  Box,
+  Flex
+} from 'theme-ui'
 
-export default ({
-  image,
-  title,
-  description
-}) => (
-    <Box width={256}>
-      <Card
-        sx={{
-          p: 1,
-          borderRadius: 2,
-          boxShadow: '0 0 16px rgba(0, 0, 0, .25)',
-        }}>
-        <Image src={image} />
-        <Box px={2}>
-          <Heading
-            fontSize={8}
-            color='primary'>
-            Hello
-          </Heading>
-          <Text fontSize={0}>
-            {description}
-            You can edit this code
-          </Text>
-        </Box>
-      </Card>
+export default props => (
+  <Flex>
+    <Box p={2} bg='muted' sx={{ flex: '1 1 auto' }}>
+      <Heading>Home 1st column</Heading>
     </Box>
-  )
+    <Box p={2} bg='muted' sx={{ flex: '1 1 auto' }}>
+      <Heading>Home 2nd column</Heading>
+
+    </Box>
+  </Flex>
+)

@@ -1,35 +1,32 @@
 import React from 'react'
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
-//import theme from '../themes/theme'
-import preset from '@rebass/preset'
+import App from 'next/app'
+import { ThemeProvider, Styled, useColorMode } from 'theme-ui'
 
 import Header from '../components/Header'
-import {
-    Box,
-    Button,
-    Heading
-} from "rebass/styled-components";
+import theme from '../src/theme'
 
-const Style = createGlobalStyle`
-* { box-sizing: border-box; }
-body { margin:0; }
-`
+class MyApp extends App {
+  // Only uncomment this method if you have blocking data requirements for
+  // every single page in your application. This disables the ability to
+  // perform automatic static optimization, causing every page in your app to
+  // be server-side rendered.
+  //
+  // static async getInitialProps(appContext) {
+  //   // calls page's `getInitialProps` and fills `appProps.pageProps`
+  //   const appProps = await App.getInitialProps(appContext);
+  //
+  //   return { ...appProps }
+  // }
 
-const Layout = ({ children }) => <div className="layout">{children}</div>
-
-export default ({ Component, pageProps }) => (
-    <ThemeProvider theme={preset}>
-        <Style />
+  render() {
+    const { Component, pageProps } = this.props
+    return (
+      <ThemeProvider theme={theme}>
         <Header />
-        <Box p={3} height={40}>
-            Hello
-        </Box>
-        <Heading
-            fontSize={[5, 6, 7]}
-            color='primary'>
-            Hello
-    </Heading>
-        <Button variant='outline' mr={2}>Outline</Button>
         <Component {...pageProps} />
-    </ThemeProvider>
-)
+      </ThemeProvider>
+    )
+  }
+}
+
+export default MyApp

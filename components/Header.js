@@ -1,25 +1,42 @@
 import Link from 'next/link';
 import {
-  Flex,
-  Text,
-  Box,
-} from 'rebass/styled-components'
+  NavLink,
+  Flex
+} from 'theme-ui'
+import { useColorMode } from 'theme-ui'
+import { jsx } from 'theme-ui'
 
-const Header = () => (
-  <Flex
-    px={2}
-    color='white'
-    bg='black'
-    alignItems='center'>
-    <Text p={2} fontWeight='bold'>Rebass</Text>
-    <Link href="/">
-      <a>Home</a>
-    </Link>
-    <Link href="/about">
-      <a>About</a>
-    </Link>
-  </Flex>
-);
-
-export default Header;
-
+export default props => {
+  const [colorMode, setColorMode] = useColorMode()
+  return (
+    <Flex as='nav' 
+    sx={{
+      px: 3, // padding-left & padding-right
+      // paddingX: 3 will also work
+      py: 4, // padding-top & padding-bottom
+      mb: 3, // margin-bottom
+    }}
+    >
+      <Link href="/" passHref>
+        <NavLink p={2}>
+          Home
+      </NavLink>
+      </Link>
+      <Link href="/About" passHref>
+        <NavLink p={2}>
+          About
+      </NavLink>
+      </Link>
+      <NavLink p={2} border={2}
+        onClick={e => {
+          setColorMode(colorMode === 'default' ? 'dark' : 'default')
+        }}
+        sx={{
+          variant: 'links.nav.outlined',
+        }}
+      >
+        {colorMode === 'default' ? 'Dark' : 'Light'}
+      </NavLink>
+    </Flex>
+  )
+}
