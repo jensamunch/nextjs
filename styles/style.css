@@ -1,0 +1,25 @@
+/* purgecss start ignore */
+@tailwind  base;
+@tailwind  components;
+/* purgecss end ignore */
+
+@tailwind  utilities;
+
+body,
+html {
+    @apply p-12;
+    @apply font-sans text-black antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  @apply text-white;
+
+  img {
+    opacity: 0.75;
+    transition: opacity 0.5s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}
+
