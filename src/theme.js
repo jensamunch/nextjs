@@ -3,24 +3,25 @@ export default {
   colors: {
     text: '#000',
     background: '#fff',
-    primary: '#07c',
-    secondary: '#609',
+    primary: 'hotpink',
+    secondary: 'indigo',
     modes: {
       dark: {
         text: '#fff',
         background: '#222',
-        primary: '#0cf',
-        secondary: '#90c',
+        primary: 'hotpink',
+        secondary: 'indigo',
       },
     },
   },
+  sizes: {
+    container: 1280,
+  },
   links: {
     nav: {
-      outlined: {
-        borderStyle: 'solid',
-        borderWidth: '2px',
+      darkswitcher: {
         paddingBottom: '0px',
-        paddingTop: '6px'
+        paddingTop: '4px'
       }
     }
   },

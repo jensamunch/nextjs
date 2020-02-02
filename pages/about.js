@@ -1,13 +1,16 @@
 /** @jsx jsx */
-import { jsx, Styled } from 'theme-ui'
+import { jsx, Box, Heading } from 'theme-ui'
 
 export default props => (
-  <div
+  <Box
     sx={{
-      maxWidth: 1024,
+      maxWidth: 500,
       mx: 'auto',
       p: 3,
+      border: '1px',
+      borderColor: 'lightpink',
+      borderStyle: 'solid',
     }}>
-    <Styled.h1>About</Styled.h1>
-  </div>
+    <Heading>About</Heading>
+  </Box>
 )

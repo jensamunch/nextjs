@@ -5,6 +5,8 @@ import {
 } from 'theme-ui'
 import { useColorMode } from 'theme-ui'
 import { jsx } from 'theme-ui'
+import MoonIcon from '../icons/moon.svg';
+import SunIcon from '../icons/sun.svg';
 
 export default props => {
   const [colorMode, setColorMode] = useColorMode()
@@ -22,7 +24,7 @@ export default props => {
           Home
       </NavLink>
       </Link>
-      <Link href="/About" passHref>
+      <Link href="/about" passHref>
         <NavLink p={2}>
           About
       </NavLink>
@@ -32,10 +34,10 @@ export default props => {
           setColorMode(colorMode === 'default' ? 'dark' : 'default')
         }}
         sx={{
-          variant: 'links.nav.outlined',
+          variant: 'links.nav.darkswitcher',
         }}
       >
-        {colorMode === 'default' ? 'Dark' : 'Light'}
+        {colorMode === 'default' ? <img src={MoonIcon} /> : <img src={SunIcon} /> }
       </NavLink>
     </Flex>
   )
