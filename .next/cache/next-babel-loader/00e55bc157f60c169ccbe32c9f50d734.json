@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React from 'react';\nimport Header from '../components/Header';\nimport Footer from '../components/Footer';\nimport \"../styles/style.css\";\n\nvar Layout = function Layout(_ref) {\n  var children = _ref.children;\n  return __jsx(\"div\", {\n    className: \"layout\"\n  }, children);\n};\n\nexport default (function (_ref2) {\n  var Component = _ref2.Component,\n      pageProps = _ref2.pageProps;\n  return __jsx(Layout, null, __jsx(Header, null), __jsx(Component, pageProps), __jsx(Footer, null));\n});",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

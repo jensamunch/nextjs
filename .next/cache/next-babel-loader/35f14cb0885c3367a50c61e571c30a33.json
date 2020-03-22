@@ -1,0 +1,15 @@
+{
+  "ast": null,
+  "code": "import _defineProperty from \"@babel/runtime-corejs2/helpers/esm/defineProperty\";\nvar _jsxFileName = \"/Users/jensamunch/Documents/nextjs/components/Header.js\";\nimport React from \"react\";\nvar __jsx = React.createElement;\nimport Link from 'next/link';\n\nvar Header = function Header() {\n  var _jsx, _jsx2;\n\n  return __jsx(Flex, {\n    px: 2,\n    color: \"white\",\n    bg: \"black\",\n    alignItems: \"center\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 4\n    },\n    __self: this\n  }, __jsx(Text, {\n    p: 2,\n    fontWeight: \"bold\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, \"Rebass\"), __jsx(Box, {\n    mx: \"auto\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }), __jsx(Link, (_jsx = {\n    href: \"/\",\n    variant: \"nav\"\n  }, _defineProperty(_jsx, \"href\", \"#!\"), _defineProperty(_jsx, \"__source\", {\n    fileName: _jsxFileName,\n    lineNumber: 11\n  }), _defineProperty(_jsx, \"__self\", this), _jsx), \"Home\"), __jsx(Link, (_jsx2 = {\n    href: \"/about\",\n    variant: \"nav\"\n  }, _defineProperty(_jsx2, \"href\", \"#!\"), _defineProperty(_jsx2, \"__source\", {\n    fileName: _jsxFileName,\n    lineNumber: 14\n  }), _defineProperty(_jsx2, \"__self\", this), _jsx2), \"About\"));\n};\n\nexport default Header;",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/jensamunch/Documents/nextjs/components/Header.js"],
+    "names": ["Link", "Header"],
+    "mappings": ";;;;AAAA,OAAOA,IAAP,MAAiB,WAAjB;;AAEA,IAAMC,MAAM,GAAG,SAATA,MAAS;AAAA;;AAAA,SACb,MAAC,IAAD;AACE,IAAA,EAAE,EAAE,CADN;AAEE,IAAA,KAAK,EAAC,OAFR;AAGE,IAAA,EAAE,EAAC,OAHL;AAIE,IAAA,UAAU,EAAC,QAJb;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KAKE,MAAC,IAAD;AAAM,IAAA,CAAC,EAAE,CAAT;AAAY,IAAA,UAAU,EAAC,MAAvB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,cALF,EAME,MAAC,GAAD;AAAK,IAAA,EAAE,EAAC,MAAR;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IANF,EAOE,MAAC,IAAD;AAAM,IAAA,IAAI,EAAC,GAAX;AAAe,IAAA,OAAO,EAAC;AAAvB,mCAAkC,IAAlC;AAAA;AAAA;AAAA,2DAPF,EAUE,MAAC,IAAD;AAAM,IAAA,IAAI,EAAC,QAAX;AAAoB,IAAA,OAAO,EAAC;AAA5B,oCAAuC,IAAvC;AAAA;AAAA;AAAA,8DAVF,CADa;AAAA,CAAf;;AAiBA,eAAeA,MAAf",
+    "sourcesContent": [
+      "import Link from 'next/link';\n\nconst Header = () => (\n  <Flex\n    px={2}\n    color='white'\n    bg='black'\n    alignItems='center'>\n    <Text p={2} fontWeight='bold'>Rebass</Text>\n    <Box mx='auto' />\n    <Link href=\"/\" variant='nav' href='#!'>\n      Home\n  </Link>\n    <Link href=\"/about\" variant='nav' href='#!'>\n      About\n  </Link>\n  </Flex>\n);\n\nexport default Header;\n\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

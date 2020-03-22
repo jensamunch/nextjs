@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React from 'react';\nimport App from 'next/app';\nimport { ThemeProvider, useColorMode, jsx, Container, Box } from 'theme-ui';\nimport Header from '../components/Header';\nimport theme from '../src/theme';\n\nclass MyApp extends App {\n  render() {\n    const {\n      Component,\n      pageProps\n    } = this.props;\n    return __jsx(ThemeProvider, {\n      theme: theme\n    }, __jsx(Container, {\n      bg: \"muted\"\n    }, __jsx(Header, null), __jsx(Component, pageProps)));\n  }\n\n}\n\nexport default MyApp;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

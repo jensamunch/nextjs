@@ -1,0 +1,15 @@
+{
+  "ast": null,
+  "code": "var _jsxFileName = \"/Users/jensamunch/Documents/nextjs/pages/about.js\";\nimport React from \"react\";\nvar __jsx = React.createElement;\n\n/** @jsx jsx */\nimport { jsx, Styled } from 'theme-ui';\nexport default (props => jsx(\"div\", {\n  sx: {\n    maxWidth: 1024,\n    mx: 'auto',\n    p: 3\n  },\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 5\n  },\n  __self: this\n}, jsx(Styled.h1, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 11\n  },\n  __self: this\n}, \"Hello\")));",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/jensamunch/Documents/nextjs/pages/about.js"],
+    "names": ["jsx", "Styled", "props", "maxWidth", "mx", "p"],
+    "mappings": ";;;;AAAA;AACA,SAASA,GAAT,EAAcC,MAAd,QAA4B,UAA5B;AAEA,gBAAeC,KAAK,IAClB;AACE,EAAA,EAAE,EAAE;AACFC,IAAAA,QAAQ,EAAE,IADR;AAEFC,IAAAA,EAAE,EAAE,MAFF;AAGFC,IAAAA,CAAC,EAAE;AAHD,GADN;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,GAME,IAAC,MAAD,CAAQ,EAAR;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,WANF,CADF",
+    "sourcesContent": [
+      "/** @jsx jsx */\nimport { jsx, Styled } from 'theme-ui'\n\nexport default props => (\n  <div\n    sx={{\n      maxWidth: 1024,\n      mx: 'auto',\n      p: 3,\n    }}>\n    <Styled.h1>Hello</Styled.h1>\n  </div>\n)"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

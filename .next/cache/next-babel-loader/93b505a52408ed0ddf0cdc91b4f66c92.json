@@ -1,0 +1,24 @@
+{
+  "ast": null,
+  "code": "var _jsxFileName = \"/Users/jensamunch/Documents/nextjs/components/Header.js\";\nimport React from \"react\";\nvar __jsx = React.createElement;\nimport Link from 'next/link';\nimport { NavLink, Flex } from 'theme-ui';\nimport { useColorMode } from 'theme-ui';\nexport default (props => {\n  const [colorMode, setColorMode] = useColorMode();\n  return __jsx(Flex, {\n    as: \"nav\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }, __jsx(Link, {\n    href: \"/\",\n    passHref: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, __jsx(NavLink, {\n    p: 2,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, \"Home\")), __jsx(Link, {\n    href: \"/Hello\",\n    passHref: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 17\n    },\n    __self: this\n  }, __jsx(NavLink, {\n    p: 2,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 18\n    },\n    __self: this\n  }, \"Hello\")), __jsx(Link, {\n    href: \"/About\",\n    passHref: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 22\n    },\n    __self: this\n  }, __jsx(NavLink, {\n    p: 2,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 23\n    },\n    __self: this\n  }, \"About\")), __jsx(NavLink, {\n    p: 2,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 27\n    },\n    __self: this\n  }, \"onClick=\", e => {\n    setColorMode(colorMode === 'default' ? 'dark' : 'default');\n  }, \"> Toggle \", colorMode === 'default' ? 'Dark' : 'Light'));\n});",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/jensamunch/Documents/nextjs/components/Header.js"],
+    "names": [
+      "Link",
+      "NavLink",
+      "Flex",
+      "useColorMode",
+      "props",
+      "colorMode",
+      "setColorMode",
+      "e"
+    ],
+    "mappings": ";;;AAAA,OAAOA,IAAP,MAAiB,WAAjB;AACA,SACEC,OADF,EAEEC,IAFF,QAGO,UAHP;AAIA,SAASC,YAAT,QAA6B,UAA7B;AAEA,gBAAeC,KAAK,IAAI;AACtB,QAAM,CAACC,SAAD,EAAYC,YAAZ,IAA4BH,YAAY,EAA9C;AACA,SACE,MAAC,IAAD;AAAM,IAAA,EAAE,EAAC,KAAT;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,IAAD;AAAM,IAAA,IAAI,EAAC,GAAX;AAAe,IAAA,QAAQ,MAAvB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,OAAD;AAAS,IAAA,CAAC,EAAE,CAAZ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,YADF,CADF,EAME,MAAC,IAAD;AAAM,IAAA,IAAI,EAAC,QAAX;AAAoB,IAAA,QAAQ,MAA5B;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,OAAD;AAAS,IAAA,CAAC,EAAE,CAAZ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,aADF,CANF,EAWE,MAAC,IAAD;AAAM,IAAA,IAAI,EAAC,QAAX;AAAoB,IAAA,QAAQ,MAA5B;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,OAAD;AAAS,IAAA,CAAC,EAAE,CAAZ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,aADF,CAXF,EAgBE,MAAC,OAAD;AAAS,IAAA,CAAC,EAAE,CAAZ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,iBACWI,CAAC,IAAI;AACZD,IAAAA,YAAY,CAACD,SAAS,KAAK,SAAd,GAA0B,MAA1B,GAAmC,SAApC,CAAZ;AACD,GAHH,eAIUA,SAAS,KAAK,SAAd,GAA0B,MAA1B,GAAmC,OAJ7C,CAhBF,CADF;AAyBD,CA3BD",
+    "sourcesContent": [
+      "import Link from 'next/link';\nimport {\n  NavLink,\n  Flex\n} from 'theme-ui'\nimport { useColorMode } from 'theme-ui'\n\nexport default props => {\n  const [colorMode, setColorMode] = useColorMode()\n  return (\n    <Flex as='nav'>\n      <Link href=\"/\" passHref>\n        <NavLink p={2}>\n          Home\n      </NavLink>\n      </Link>\n      <Link href=\"/Hello\" passHref>\n        <NavLink p={2}>\n          Hello\n      </NavLink>\n      </Link>\n      <Link href=\"/About\" passHref>\n        <NavLink p={2}>\n          About\n      </NavLink>\n      </Link>\n      <NavLink p={2}>\n        onClick={e => {\n          setColorMode(colorMode === 'default' ? 'dark' : 'default')\n        }}>\n        Toggle {colorMode === 'default' ? 'Dark' : 'Light'}\n      </NavLink>\n    </Flex>\n  )\n}"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

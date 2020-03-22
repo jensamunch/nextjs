@@ -1,0 +1,35 @@
+{
+  "ast": null,
+  "code": "var _jsxFileName = \"/Users/jensamunch/Documents/nextjs/pages/_app.js\";\nvar __jsx = React.createElement;\n\nfunction _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nimport React from 'react';\nimport App from 'next/app';\nimport { ThemeProvider, Styled, useColorMode } from 'theme-ui';\nimport Header from '../components/Header';\nimport theme from '../src/theme';\n\nfunction Names() {\n  return __jsx(\"div\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, __jsx(Welcome, {\n    name: \"Sara\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 11\n    },\n    __self: this\n  }), __jsx(Welcome, {\n    name: \"Cahal\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }), __jsx(Welcome, {\n    name: \"Edite\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }));\n}\n\nclass Root extends App {\n  render() {\n    const {\n      Component,\n      pageProps\n    } = this.props;\n    return __jsx(\"div\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 22\n      },\n      __self: this\n    }, \"ROOT\");\n  }\n\n}\n\nfunction formatName(user) {\n  return user.firstName + ' ' + user.lastName;\n}\n\nconst user = {\n  firstName: 'Harper',\n  lastName: 'Perez'\n};\n\nconst element = __jsx(\"h1\", {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 39\n  },\n  __self: this\n}, \"Hello, \", formatName(user), \"!\");\n\nclass MyApp extends App {\n  render() {\n    const {\n      Component,\n      pageProps\n    } = this.props;\n    return __jsx(ThemeProvider, {\n      theme: theme,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 48\n      },\n      __self: this\n    }, __jsx(Root, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 49\n      },\n      __self: this\n    }), __jsx(Names, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 50\n      },\n      __self: this\n    }), __jsx(Header, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 51\n      },\n      __self: this\n    }), __jsx(Component, _extends({}, pageProps, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 52\n      },\n      __self: this\n    })));\n  }\n\n}\n\nexport default MyApp;",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/jensamunch/Documents/nextjs/pages/_app.js"],
+    "names": [
+      "React",
+      "App",
+      "ThemeProvider",
+      "Styled",
+      "useColorMode",
+      "Header",
+      "theme",
+      "Names",
+      "Root",
+      "render",
+      "Component",
+      "pageProps",
+      "props",
+      "formatName",
+      "user",
+      "firstName",
+      "lastName",
+      "element",
+      "MyApp"
+    ],
+    "mappings": ";;;;;AAAA,OAAOA,KAAP,MAAkB,OAAlB;AACA,OAAOC,GAAP,MAAgB,UAAhB;AACA,SAASC,aAAT,EAAwBC,MAAxB,EAAgCC,YAAhC,QAAoD,UAApD;AAEA,OAAOC,MAAP,MAAmB,sBAAnB;AACA,OAAOC,KAAP,MAAkB,cAAlB;;AAEA,SAASC,KAAT,GAAiB;AACf,SACE;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,OAAD;AAAS,IAAA,IAAI,EAAC,MAAd;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IADF,EAEE,MAAC,OAAD;AAAS,IAAA,IAAI,EAAC,OAAd;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAFF,EAGE,MAAC,OAAD;AAAS,IAAA,IAAI,EAAC,OAAd;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAHF,CADF;AAOD;;AAED,MAAMC,IAAN,SAAmBP,GAAnB,CAAuB;AACrBQ,EAAAA,MAAM,GAAG;AACP,UAAM;AAAEC,MAAAA,SAAF;AAAaC,MAAAA;AAAb,QAA2B,KAAKC,KAAtC;AACA,WACE;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,cADF;AAKD;;AARoB;;AAWvB,SAASC,UAAT,CAAoBC,IAApB,EAA0B;AACxB,SAAOA,IAAI,CAACC,SAAL,GAAiB,GAAjB,GAAuBD,IAAI,CAACE,QAAnC;AACD;;AAED,MAAMF,IAAI,GAAG;AACXC,EAAAA,SAAS,EAAE,QADA;AAEXC,EAAAA,QAAQ,EAAE;AAFC,CAAb;;AAKA,MAAMC,OAAO,GACX;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,cACUJ,UAAU,CAACC,IAAD,CADpB,MADF;;AAMA,MAAMI,KAAN,SAAoBjB,GAApB,CAAwB;AACtBQ,EAAAA,MAAM,GAAG;AACP,UAAM;AAAEC,MAAAA,SAAF;AAAaC,MAAAA;AAAb,QAA2B,KAAKC,KAAtC;AACA,WACE,MAAC,aAAD;AAAe,MAAA,KAAK,EAAEN,KAAtB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,OACE,MAAC,IAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,MADF,EAEE,MAAC,KAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,MAFF,EAGI,MAAC,MAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,MAHJ,EAII,MAAC,SAAD,eAAeK,SAAf;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,OAJJ,CADF;AAQD;;AAXqB;;AAcxB,eAAeO,KAAf",
+    "sourcesContent": [
+      "import React from 'react'\nimport App from 'next/app'\nimport { ThemeProvider, Styled, useColorMode } from 'theme-ui'\n\nimport Header from '../components/Header'\nimport theme from '../src/theme'\n\nfunction Names() {\n  return (\n    <div>\n      <Welcome name=\"Sara\" />\n      <Welcome name=\"Cahal\" />\n      <Welcome name=\"Edite\" />\n    </div>\n  );\n}\n\nclass Root extends App {\n  render() {\n    const { Component, pageProps } = this.props\n    return (\n      <div>\n        ROOT\n      </div>\n    )\n  }\n}\n\nfunction formatName(user) {\n  return user.firstName + ' ' + user.lastName;\n}\n\nconst user = {\n  firstName: 'Harper',\n  lastName: 'Perez'\n};\n\nconst element = (\n  <h1>\n    Hello, {formatName(user)}!\n  </h1>\n);\n\nclass MyApp extends App {\n  render() {\n    const { Component, pageProps } = this.props\n    return (\n      <ThemeProvider theme={theme}>\n        <Root />\n        <Names />\n          <Header />\n          <Component {...pageProps} />\n      </ThemeProvider>\n    )\n  }\n}\n\nexport default MyApp"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

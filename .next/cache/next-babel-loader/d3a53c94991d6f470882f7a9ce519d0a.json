@@ -1,0 +1,30 @@
+{
+  "ast": null,
+  "code": "var _jsxFileName = \"/Users/jensamunch/Documents/nextjs/pages/_app.js\";\nvar __jsx = React.createElement;\n\nfunction _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nimport React from 'react';\nimport App from 'next/app';\nimport { ThemeProvider, Styled, useColorMode, jsx } from 'theme-ui';\nimport Header from '../components/Header';\nimport theme from '../src/theme';\n\nclass MyApp extends App {\n  render() {\n    const {\n      Component,\n      pageProps\n    } = this.props;\n    return __jsx(ThemeProvider, {\n      theme: theme,\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 12\n      },\n      __self: this\n    }, __jsx(\"div\", {\n      sx: {\n        maxWidth: ['200px', '400px', '600px']\n      },\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 13\n      },\n      __self: this\n    }, __jsx(Header, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 18\n      },\n      __self: this\n    }), __jsx(Component, _extends({}, pageProps, {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 19\n      },\n      __self: this\n    }))));\n  }\n\n}\n\nexport default MyApp;",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/jensamunch/Documents/nextjs/pages/_app.js"],
+    "names": [
+      "React",
+      "App",
+      "ThemeProvider",
+      "Styled",
+      "useColorMode",
+      "jsx",
+      "Header",
+      "theme",
+      "MyApp",
+      "render",
+      "Component",
+      "pageProps",
+      "props",
+      "maxWidth"
+    ],
+    "mappings": ";;;;;AAAA,OAAOA,KAAP,MAAkB,OAAlB;AACA,OAAOC,GAAP,MAAgB,UAAhB;AACA,SAASC,aAAT,EAAwBC,MAAxB,EAAgCC,YAAhC,EAA8CC,GAA9C,QAAyD,UAAzD;AAEA,OAAOC,MAAP,MAAmB,sBAAnB;AACA,OAAOC,KAAP,MAAkB,cAAlB;;AAEA,MAAMC,KAAN,SAAoBP,GAApB,CAAwB;AACtBQ,EAAAA,MAAM,GAAG;AACP,UAAM;AAAEC,MAAAA,SAAF;AAAaC,MAAAA;AAAb,QAA2B,KAAKC,KAAtC;AACA,WACE,MAAC,aAAD;AAAe,MAAA,KAAK,EAAEL,KAAtB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,OACE;AACE,MAAA,EAAE,EAAE;AACFM,QAAAA,QAAQ,EAAE,CAAC,OAAD,EAAU,OAAV,EAAmB,OAAnB;AADR,OADN;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,OAKA,MAAC,MAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,MALA,EAMA,MAAC,SAAD,eAAeF,SAAf;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,OANA,CADF,CADF;AAYD;;AAfqB;;AAkBxB,eAAeH,KAAf",
+    "sourcesContent": [
+      "import React from 'react'\nimport App from 'next/app'\nimport { ThemeProvider, Styled, useColorMode, jsx } from 'theme-ui'\n\nimport Header from '../components/Header'\nimport theme from '../src/theme'\n\nclass MyApp extends App {\n  render() {\n    const { Component, pageProps } = this.props\n    return (\n      <ThemeProvider theme={theme}>\n        <div\n          sx={{\n            maxWidth: ['200px', '400px', '600px'],\n          }}\n        >\n        <Header />\n        <Component {...pageProps} />\n        </div>\n      </ThemeProvider >\n    )\n  }\n}\n\nexport default MyApp"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

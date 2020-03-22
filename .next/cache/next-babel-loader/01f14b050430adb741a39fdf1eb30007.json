@@ -1,0 +1,34 @@
+{
+  "ast": null,
+  "code": "import _extends from \"@babel/runtime-corejs2/helpers/esm/extends\";\nimport _classCallCheck from \"@babel/runtime-corejs2/helpers/esm/classCallCheck\";\nimport _createClass from \"@babel/runtime-corejs2/helpers/esm/createClass\";\nimport _possibleConstructorReturn from \"@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn\";\nimport _getPrototypeOf from \"@babel/runtime-corejs2/helpers/esm/getPrototypeOf\";\nimport _inherits from \"@babel/runtime-corejs2/helpers/esm/inherits\";\nvar _jsxFileName = \"/Users/jensamunch/Documents/nextjs/pages/_app.js\";\nvar __jsx = React.createElement;\nimport React from 'react';\nimport App from 'next/app';\nimport { ThemeProvider, Styled, useColorMode, jsx } from 'theme-ui';\nimport Header from '../components/Header';\nimport theme from '../src/theme';\n\nvar MyApp =\n/*#__PURE__*/\nfunction (_App) {\n  _inherits(MyApp, _App);\n\n  function MyApp() {\n    _classCallCheck(this, MyApp);\n\n    return _possibleConstructorReturn(this, _getPrototypeOf(MyApp).apply(this, arguments));\n  }\n\n  _createClass(MyApp, [{\n    key: \"render\",\n    value: function render() {\n      var _this$props = this.props,\n          Component = _this$props.Component,\n          pageProps = _this$props.pageProps;\n      return __jsx(ThemeProvider, {\n        theme: theme,\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 12\n        },\n        __self: this\n      }, __jsx(\"div\", {\n        sx: {\n          display: 'flex',\n          flexDirection: 'column',\n          minHeight: '100vh',\n          paddingLeft: 3,\n          paddingRight: '10px',\n          background: 'red'\n        },\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 13\n        },\n        __self: this\n      }, __jsx(Header, {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 22\n        },\n        __self: this\n      }), __jsx(Component, _extends({}, pageProps, {\n        __source: {\n          fileName: _jsxFileName,\n          lineNumber: 23\n        },\n        __self: this\n      }))));\n    }\n  }]);\n\n  return MyApp;\n}(App);\n\nexport default MyApp;",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/jensamunch/Documents/nextjs/pages/_app.js"],
+    "names": [
+      "React",
+      "App",
+      "ThemeProvider",
+      "Styled",
+      "useColorMode",
+      "jsx",
+      "Header",
+      "theme",
+      "MyApp",
+      "props",
+      "Component",
+      "pageProps",
+      "display",
+      "flexDirection",
+      "minHeight",
+      "paddingLeft",
+      "paddingRight",
+      "background"
+    ],
+    "mappings": ";;;;;;;;AAAA,OAAOA,KAAP,MAAkB,OAAlB;AACA,OAAOC,GAAP,MAAgB,UAAhB;AACA,SAASC,aAAT,EAAwBC,MAAxB,EAAgCC,YAAhC,EAA8CC,GAA9C,QAAyD,UAAzD;AAEA,OAAOC,MAAP,MAAmB,sBAAnB;AACA,OAAOC,KAAP,MAAkB,cAAlB;;IAEMC,K;;;;;;;;;;;;;6BACK;AAAA,wBAC0B,KAAKC,KAD/B;AAAA,UACCC,SADD,eACCA,SADD;AAAA,UACYC,SADZ,eACYA,SADZ;AAEP,aACE,MAAC,aAAD;AAAe,QAAA,KAAK,EAAEJ,KAAtB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,SACE;AACE,QAAA,EAAE,EAAE;AACFK,UAAAA,OAAO,EAAE,MADP;AAEFC,UAAAA,aAAa,EAAE,QAFb;AAGFC,UAAAA,SAAS,EAAE,OAHT;AAIFC,UAAAA,WAAW,EAAE,CAJX;AAKFC,UAAAA,YAAY,EAAE,MALZ;AAMFC,UAAAA,UAAU,EAAE;AANV,SADN;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,SASE,MAAC,MAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,QATF,EAUE,MAAC,SAAD,eAAeN,SAAf;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,SAVF,CADF,CADF;AAgBD;;;;EAnBiBV,G;;AAsBpB,eAAeO,KAAf",
+    "sourcesContent": [
+      "import React from 'react'\nimport App from 'next/app'\nimport { ThemeProvider, Styled, useColorMode, jsx } from 'theme-ui'\n\nimport Header from '../components/Header'\nimport theme from '../src/theme'\n\nclass MyApp extends App {\n  render() {\n    const { Component, pageProps } = this.props\n    return (\n      <ThemeProvider theme={theme}>\n        <div\n          sx={{\n            display: 'flex',\n            flexDirection: 'column',\n            minHeight: '100vh',\n            paddingLeft: 3,\n            paddingRight: '10px',\n            background: 'red',\n          }}>        \n          <Header />\n          <Component {...pageProps} />\n        </div>\n      </ThemeProvider>\n    )\n  }\n}\n\nexport default MyApp"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

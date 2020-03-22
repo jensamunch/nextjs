@@ -1,0 +1,31 @@
+{
+  "ast": null,
+  "code": "var _jsxFileName = \"/Users/jensamunch/Documents/nextjs/pages/index.js\";\nimport React from \"react\";\nvar __jsx = React.createElement;\n\n/** @jsx jsx */\nimport { jsx, Heading, Box, Flex } from 'theme-ui';\n\nclass FormatName extends React.Component {\n  render() {\n    return jsx(\"div\", {\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 12\n      },\n      __self: this\n    }, formatName(user));\n  }\n\n}\n\nfunction formatName(user) {\n  return user.firstName + ' ' + user.lastName;\n}\n\nconst user = {\n  firstName: 'Harper',\n  lastName: 'Perez'\n};\nconst element = jsx(\"h1\", {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 29\n  },\n  __self: this\n}, \"Hello, \", formatName(user), \"!\");\nexport default (props => jsx(Flex, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 35\n  },\n  __self: this\n}, jsx(Box, {\n  p: 2,\n  bg: \"muted\",\n  sx: {\n    flex: '1 1 auto'\n  },\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 36\n  },\n  __self: this\n}, jsx(Heading, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 37\n  },\n  __self: this\n}, \"Home 1st column\"), jsx(FormatName, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 38\n  },\n  __self: this\n})), jsx(Box, {\n  p: 2,\n  bg: \"muted\",\n  sx: {\n    flex: '1 1 auto'\n  },\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 40\n  },\n  __self: this\n}, jsx(Heading, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 41\n  },\n  __self: this\n}, \"Home 2nd column\"))));",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/jensamunch/Documents/nextjs/pages/index.js"],
+    "names": [
+      "jsx",
+      "Heading",
+      "Box",
+      "Flex",
+      "FormatName",
+      "React",
+      "Component",
+      "render",
+      "formatName",
+      "user",
+      "firstName",
+      "lastName",
+      "element",
+      "props",
+      "flex"
+    ],
+    "mappings": ";;;;AAAA;AACA,SACEA,GADF,EAEEC,OAFF,EAGEC,GAHF,EAIEC,IAJF,QAKO,UALP;;AAOA,MAAMC,UAAN,SAAyBC,KAAK,CAACC,SAA/B,CAAyC;AACvCC,EAAAA,MAAM,GAAG;AACP,WACE;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,OACIC,UAAU,CAACC,IAAD,CADd,CADF;AAKD;;AAPsC;;AAUzC,SAASD,UAAT,CAAoBC,IAApB,EAA0B;AACxB,SAAOA,IAAI,CAACC,SAAL,GAAiB,GAAjB,GAAuBD,IAAI,CAACE,QAAnC;AACD;;AAED,MAAMF,IAAI,GAAG;AACXC,EAAAA,SAAS,EAAE,QADA;AAEXC,EAAAA,QAAQ,EAAE;AAFC,CAAb;AAKA,MAAMC,OAAO,GACX;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,cACUJ,UAAU,CAACC,IAAD,CADpB,MADF;AAMA,gBAAeI,KAAK,IAClB,IAAC,IAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,GACE,IAAC,GAAD;AAAK,EAAA,CAAC,EAAE,CAAR;AAAW,EAAA,EAAE,EAAC,OAAd;AAAsB,EAAA,EAAE,EAAE;AAAEC,IAAAA,IAAI,EAAE;AAAR,GAA1B;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,GACE,IAAC,OAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,qBADF,EAEE,IAAC,UAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,EAFF,CADF,EAKE,IAAC,GAAD;AAAK,EAAA,CAAC,EAAE,CAAR;AAAW,EAAA,EAAE,EAAC,OAAd;AAAsB,EAAA,EAAE,EAAE;AAAEA,IAAAA,IAAI,EAAE;AAAR,GAA1B;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,GACE,IAAC,OAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,qBADF,CALF,CADF",
+    "sourcesContent": [
+      "/** @jsx jsx */\nimport {\n  jsx,\n  Heading,\n  Box,\n  Flex\n} from 'theme-ui'\n\nclass FormatName extends React.Component {\n  render() {\n    return (\n      <div>\n        { formatName(user) }\n      </div>\n    )\n  }\n}\n\nfunction formatName(user) {\n  return user.firstName + ' ' + user.lastName;\n}\n\nconst user = {\n  firstName: 'Harper',\n  lastName: 'Perez'\n};\n\nconst element = (\n  <h1>\n    Hello, {formatName(user)}!\n  </h1>\n);\n\nexport default props => (\n  <Flex>\n    <Box p={2} bg='muted' sx={{ flex: '1 1 auto' }}>\n      <Heading>Home 1st column</Heading>\n      <FormatName />\n    </Box>\n    <Box p={2} bg='muted' sx={{ flex: '1 1 auto' }}>\n      <Heading>Home 2nd column</Heading>\n\n    </Box>\n  </Flex>\n)"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

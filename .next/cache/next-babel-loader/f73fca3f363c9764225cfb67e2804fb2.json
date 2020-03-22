@@ -1,0 +1,25 @@
+{
+  "ast": null,
+  "code": "import _slicedToArray from \"@babel/runtime-corejs2/helpers/esm/slicedToArray\";\nvar _jsxFileName = \"/Users/jensamunch/Documents/nextjs/components/Header.js\";\nimport React from \"react\";\nvar __jsx = React.createElement;\nimport Link from 'next/link';\nimport { NavLink, Flex } from 'theme-ui';\nimport { useColorMode } from 'theme-ui';\nimport { jsx } from 'theme-ui';\nexport default (function (props) {\n  var _useColorMode = useColorMode(),\n      _useColorMode2 = _slicedToArray(_useColorMode, 2),\n      colorMode = _useColorMode2[0],\n      setColorMode = _useColorMode2[1];\n\n  return __jsx(Flex, {\n    as: \"nav\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 12\n    },\n    __self: this\n  }, __jsx(Link, {\n    href: \"/\",\n    passHref: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 13\n    },\n    __self: this\n  }, __jsx(NavLink, {\n    p: 2,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 14\n    },\n    __self: this\n  }, \"Home\")), __jsx(Link, {\n    href: \"/Hello\",\n    passHref: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 18\n    },\n    __self: this\n  }, __jsx(NavLink, {\n    p: 2,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 19\n    },\n    __self: this\n  }, \"Hello\")), __jsx(Link, {\n    href: \"/About\",\n    passHref: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 23\n    },\n    __self: this\n  }, __jsx(NavLink, {\n    p: 2,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 24\n    },\n    __self: this\n  }, \"About\")), __jsx(NavLink, {\n    p: 2,\n    border: 2,\n    onClick: function onClick(e) {\n      setColorMode(colorMode === 'default' ? 'dark' : 'default');\n    },\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 28\n    },\n    __self: this\n  }, colorMode === 'default' ? 'Dark' : 'Light'));\n});",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/jensamunch/Documents/nextjs/components/Header.js"],
+    "names": [
+      "Link",
+      "NavLink",
+      "Flex",
+      "useColorMode",
+      "jsx",
+      "props",
+      "colorMode",
+      "setColorMode",
+      "e"
+    ],
+    "mappings": ";;;;AAAA,OAAOA,IAAP,MAAiB,WAAjB;AACA,SACEC,OADF,EAEEC,IAFF,QAGO,UAHP;AAIA,SAASC,YAAT,QAA6B,UAA7B;AACA,SAASC,GAAT,QAAoB,UAApB;AAEA,gBAAe,UAAAC,KAAK,EAAI;AAAA,sBACYF,YAAY,EADxB;AAAA;AAAA,MACfG,SADe;AAAA,MACJC,YADI;;AAEtB,SACE,MAAC,IAAD;AAAM,IAAA,EAAE,EAAC,KAAT;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,IAAD;AAAM,IAAA,IAAI,EAAC,GAAX;AAAe,IAAA,QAAQ,MAAvB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,OAAD;AAAS,IAAA,CAAC,EAAE,CAAZ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,YADF,CADF,EAME,MAAC,IAAD;AAAM,IAAA,IAAI,EAAC,QAAX;AAAoB,IAAA,QAAQ,MAA5B;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,OAAD;AAAS,IAAA,CAAC,EAAE,CAAZ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,aADF,CANF,EAWE,MAAC,IAAD;AAAM,IAAA,IAAI,EAAC,QAAX;AAAoB,IAAA,QAAQ,MAA5B;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,OAAD;AAAS,IAAA,CAAC,EAAE,CAAZ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,aADF,CAXF,EAgBE,MAAC,OAAD;AAAS,IAAA,CAAC,EAAE,CAAZ;AAAe,IAAA,MAAM,EAAE,CAAvB;AACE,IAAA,OAAO,EAAE,iBAAAC,CAAC,EAAI;AACZD,MAAAA,YAAY,CAACD,SAAS,KAAK,SAAd,GAA0B,MAA1B,GAAmC,SAApC,CAAZ;AACD,KAHH;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KAIGA,SAAS,KAAK,SAAd,GAA0B,MAA1B,GAAmC,OAJtC,CAhBF,CADF;AAyBD,CA3BD",
+    "sourcesContent": [
+      "import Link from 'next/link';\nimport {\n  NavLink,\n  Flex\n} from 'theme-ui'\nimport { useColorMode } from 'theme-ui'\nimport { jsx } from 'theme-ui'\n\nexport default props => {\n  const [colorMode, setColorMode] = useColorMode()\n  return (\n    <Flex as='nav'>\n      <Link href=\"/\" passHref>\n        <NavLink p={2}>\n          Home\n      </NavLink>\n      </Link>\n      <Link href=\"/Hello\" passHref>\n        <NavLink p={2}>\n          Hello\n      </NavLink>\n      </Link>\n      <Link href=\"/About\" passHref>\n        <NavLink p={2}>\n          About\n      </NavLink>\n      </Link>\n      <NavLink p={2} border={2}\n        onClick={e => {\n          setColorMode(colorMode === 'default' ? 'dark' : 'default')\n        }}>\n        {colorMode === 'default' ? 'Dark' : 'Light'}\n      </NavLink>\n    </Flex>\n  )\n}"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

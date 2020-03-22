@@ -1,0 +1,26 @@
+{
+  "ast": null,
+  "code": "var _jsxFileName = \"/Users/jensamunch/Documents/nextjs/pages/about.js\";\nimport React from \"react\";\nvar __jsx = React.createElement;\n\n/** @jsx jsx */\nimport { jsx, Box, Heading } from \"theme-ui\";\nexport default (props => jsx(Box, {\n  sx: {\n    maxWidth: 500,\n    mx: \"auto\",\n    p: 3,\n    border: \"1px\",\n    borderColor: \"lightpink\",\n    borderStyle: \"solid\"\n  },\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 5\n  },\n  __self: this\n}, jsx(Heading, {\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 15\n  },\n  __self: this\n}, \"About\")));",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/jensamunch/Documents/nextjs/pages/about.js"],
+    "names": [
+      "jsx",
+      "Box",
+      "Heading",
+      "props",
+      "maxWidth",
+      "mx",
+      "p",
+      "border",
+      "borderColor",
+      "borderStyle"
+    ],
+    "mappings": ";;;;AAAA;AACA,SAASA,GAAT,EAAcC,GAAd,EAAmBC,OAAnB,QAAkC,UAAlC;AAEA,gBAAgBC,KAAD,IACb,IAAC,GAAD;AACE,EAAA,EAAE,EAAE;AACFC,IAAAA,QAAQ,EAAE,GADR;AAEFC,IAAAA,EAAE,EAAE,MAFF;AAGFC,IAAAA,CAAC,EAAE,CAHD;AAIFC,IAAAA,MAAM,EAAE,KAJN;AAKFC,IAAAA,WAAW,EAAE,WALX;AAMFC,IAAAA,WAAW,EAAE;AANX,GADN;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,GAUY,IAAC,OAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,WAVZ,CADF",
+    "sourcesContent": [
+      "/** @jsx jsx */\nimport { jsx, Box, Heading } from \"theme-ui\"\n\nexport default (props) => (\n  <Box\n    sx={{\n      maxWidth: 500,\n      mx: \"auto\",\n      p: 3,\n      border: \"1px\",\n      borderColor: \"lightpink\",\n      borderStyle: \"solid\",\n    }}\n  >\n              <Heading>\n                About\n        </Heading>\n  </Box>\n)\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

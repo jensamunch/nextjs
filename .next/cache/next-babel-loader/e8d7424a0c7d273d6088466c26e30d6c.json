@@ -1,0 +1,46 @@
+{
+  "ast": null,
+  "code": "import _Object$defineProperty from \"@babel/runtime-corejs2/core-js/object/define-property\";\nimport _Object$defineProperties from \"@babel/runtime-corejs2/core-js/object/define-properties\";\nimport _Object$getOwnPropertyDescriptors from \"@babel/runtime-corejs2/core-js/object/get-own-property-descriptors\";\nimport _Object$getOwnPropertyDescriptor from \"@babel/runtime-corejs2/core-js/object/get-own-property-descriptor\";\nimport _Object$getOwnPropertySymbols from \"@babel/runtime-corejs2/core-js/object/get-own-property-symbols\";\nimport _Object$keys from \"@babel/runtime-corejs2/core-js/object/keys\";\nimport _extends from \"@babel/runtime-corejs2/helpers/esm/extends\";\nimport _defineProperty from \"@babel/runtime-corejs2/helpers/esm/defineProperty\";\nimport _taggedTemplateLiteral from \"@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral\";\nvar _jsxFileName = \"/Users/jensamunch/Documents/nextjs/pages/_app.js\";\nvar __jsx = React.createElement;\n\nfunction ownKeys(object, enumerableOnly) { var keys = _Object$keys(object); if (_Object$getOwnPropertySymbols) { var symbols = _Object$getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _Object$getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (_Object$getOwnPropertyDescriptors) { _Object$defineProperties(target, _Object$getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { _Object$defineProperty(target, key, _Object$getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\nfunction _templateObject() {\n  var data = _taggedTemplateLiteral([\"\\n  * { box-sizing: border-box; }\\n  body{ margin:0; }\\n\"]);\n\n  _templateObject = function _templateObject() {\n    return data;\n  };\n\n  return data;\n}\n\nimport React from 'react';\nimport Header from '../components/Header';\nimport styled, { ThemeProvider, createGlobalStyle } from 'styled-components';\nimport { space, color, fontSize, width, fontWeight, lineHeight } from 'styled-system';\nvar Style = createGlobalStyle(_templateObject());\nvar theme = {\n  fontSizes: [12, 14, 16, 24, 32, 48, 64, 96, 128],\n  space: [// margin and padding\n  0, 4, 8, 16, 32, 64, 128, 256],\n  colors: {\n    blue: '#07c',\n    red: '#e10'\n  }\n};\nvar Root = styled.div.withConfig({\n  displayName: \"_app__Root\",\n  componentId: \"sc-1kytm5s-0\"\n})([\"font-family:system-ui,sans-serif;line-height:1.5;\"]);\nvar Box = styled.div.withConfig({\n  displayName: \"_app__Box\",\n  componentId: \"sc-1kytm5s-1\"\n})([\"\", \" \", \" \", \" \", \"\"], space, width, fontSize, color);\nBox.propTypes = _objectSpread({}, space.propTypes, {}, width.propTypes, {}, fontSize.propTypes, {}, color.propTypes);\nvar Text = styled.div.withConfig({\n  displayName: \"_app__Text\",\n  componentId: \"sc-1kytm5s-2\"\n})([\"\", \" \", \" \", \" \", \" \", \"\"], space, fontSize, fontWeight, lineHeight, color);\nText.propTypes = _objectSpread({}, space.propTypes, {}, fontSize.propTypes, {}, fontWeight.propTypes, {}, lineHeight.propTypes, {}, color.propTypes);\nvar Heading = Text.withComponent('h1');\nHeading.defaultProps = {\n  fontSize: 5,\n  lineHeight: 1.5,\n  m: 0\n};\n\nvar Layout = function Layout(_ref) {\n  var children = _ref.children;\n  return __jsx(\"div\", {\n    className: \"layout\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 78\n    },\n    __self: this\n  }, children);\n};\n\nexport default (function (_ref2) {\n  var Component = _ref2.Component,\n      pageProps = _ref2.pageProps;\n  return __jsx(ThemeProvider, {\n    theme: theme,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 81\n    },\n    __self: this\n  }, __jsx(Root, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 82\n    },\n    __self: this\n  }, __jsx(Style, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 83\n    },\n    __self: this\n  }), __jsx(Header, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 84\n    },\n    __self: this\n  }), __jsx(Component, _extends({}, pageProps, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 85\n    },\n    __self: this\n  }))));\n});",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/jensamunch/Documents/nextjs/pages/_app.js"],
+    "names": [
+      "React",
+      "Header",
+      "styled",
+      "ThemeProvider",
+      "createGlobalStyle",
+      "space",
+      "color",
+      "fontSize",
+      "width",
+      "fontWeight",
+      "lineHeight",
+      "Style",
+      "theme",
+      "fontSizes",
+      "colors",
+      "blue",
+      "red",
+      "Root",
+      "div",
+      "Box",
+      "propTypes",
+      "Text",
+      "Heading",
+      "withComponent",
+      "defaultProps",
+      "m",
+      "Layout",
+      "children",
+      "Component",
+      "pageProps"
+    ],
+    "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;AAAA,OAAOA,KAAP,MAAkB,OAAlB;AACA,OAAOC,MAAP,MAAmB,sBAAnB;AACA,OAAOC,MAAP,IAAiBC,aAAjB,EAAgCC,iBAAhC,QAAyD,mBAAzD;AACA,SACIC,KADJ,EAEIC,KAFJ,EAGIC,QAHJ,EAIIC,KAJJ,EAKIC,UALJ,EAMIC,UANJ,QAOO,eAPP;AASA,IAAMC,KAAK,GAAGP,iBAAH,mBAAX;AAKA,IAAMQ,KAAK,GAAG;AACVC,EAAAA,SAAS,EAAE,CAAC,EAAD,EAAK,EAAL,EAAS,EAAT,EAAa,EAAb,EAAiB,EAAjB,EAAqB,EAArB,EAAyB,EAAzB,EAA6B,EAA7B,EAAiC,GAAjC,CADD;AAEVR,EAAAA,KAAK,EAAE,CACH;AACA,GAFG,EAGH,CAHG,EAIH,CAJG,EAKH,EALG,EAMH,EANG,EAOH,EAPG,EAQH,GARG,EASH,GATG,CAFG;AAaVS,EAAAA,MAAM,EAAE;AACJC,IAAAA,IAAI,EAAE,MADF;AAEJC,IAAAA,GAAG,EAAE;AAFD;AAbE,CAAd;AAmBA,IAAMC,IAAI,GAAGf,MAAM,CAACgB,GAAV;AAAA;AAAA;AAAA,yDAAV;AAKA,IAAMC,GAAG,GAAGjB,MAAM,CAACgB,GAAV;AAAA;AAAA;AAAA,4BACLb,KADK,EAELG,KAFK,EAGLD,QAHK,EAILD,KAJK,CAAT;AAMAa,GAAG,CAACC,SAAJ,qBACOf,KAAK,CAACe,SADb,MAEOZ,KAAK,CAACY,SAFb,MAGOb,QAAQ,CAACa,SAHhB,MAIOd,KAAK,CAACc,SAJb;AAOA,IAAMC,IAAI,GAAGnB,MAAM,CAACgB,GAAV;AAAA;AAAA;AAAA,iCACNb,KADM,EAENE,QAFM,EAGNE,UAHM,EAINC,UAJM,EAKNJ,KALM,CAAV;AAOAe,IAAI,CAACD,SAAL,qBACOf,KAAK,CAACe,SADb,MAEOb,QAAQ,CAACa,SAFhB,MAGOX,UAAU,CAACW,SAHlB,MAIOV,UAAU,CAACU,SAJlB,MAKOd,KAAK,CAACc,SALb;AAQA,IAAME,OAAO,GAAGD,IAAI,CAACE,aAAL,CAAmB,IAAnB,CAAhB;AAEAD,OAAO,CAACE,YAAR,GAAuB;AACnBjB,EAAAA,QAAQ,EAAE,CADS;AAEnBG,EAAAA,UAAU,EAAE,GAFO;AAGnBe,EAAAA,CAAC,EAAE;AAHgB,CAAvB;;AAMA,IAAMC,MAAM,GAAG,SAATA,MAAS;AAAA,MAAGC,QAAH,QAAGA,QAAH;AAAA,SAAkB;AAAK,IAAA,SAAS,EAAC,QAAf;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KAAyBA,QAAzB,CAAlB;AAAA,CAAf;;AAEA,gBAAe;AAAA,MAAGC,SAAH,SAAGA,SAAH;AAAA,MAAcC,SAAd,SAAcA,SAAd;AAAA,SACX,MAAC,aAAD;AAAe,IAAA,KAAK,EAAEjB,KAAtB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACI,MAAC,IAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACI,MAAC,KAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IADJ,EAEI,MAAC,MAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAFJ,EAGI,MAAC,SAAD,eAAeiB,SAAf;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KAHJ,CADJ,CADW;AAAA,CAAf",
+    "sourcesContent": [
+      "import React from 'react'\nimport Header from '../components/Header'\nimport styled, { ThemeProvider, createGlobalStyle } from 'styled-components'\nimport {\n    space,\n    color,\n    fontSize,\n    width,\n    fontWeight,\n    lineHeight,\n} from 'styled-system'\n\nconst Style = createGlobalStyle`\n  * { box-sizing: border-box; }\n  body{ margin:0; }\n`\n\nconst theme = {\n    fontSizes: [12, 14, 16, 24, 32, 48, 64, 96, 128],\n    space: [\n        // margin and padding\n        0,\n        4,\n        8,\n        16,\n        32,\n        64,\n        128,\n        256,\n    ],\n    colors: {\n        blue: '#07c',\n        red: '#e10',\n    },\n}\n\nconst Root = styled.div`\n  font-family: system-ui, sans-serif;\n  line-height: 1.5;\n`\n\nconst Box = styled.div`\n  ${space}\n  ${width}\n  ${fontSize}\n  ${color}\n`\nBox.propTypes = {\n    ...space.propTypes,\n    ...width.propTypes,\n    ...fontSize.propTypes,\n    ...color.propTypes,\n}\n\nconst Text = styled.div`\n  ${space}\n  ${fontSize}\n  ${fontWeight}\n  ${lineHeight}\n  ${color}\n`\nText.propTypes = {\n    ...space.propTypes,\n    ...fontSize.propTypes,\n    ...fontWeight.propTypes,\n    ...lineHeight.propTypes,\n    ...color.propTypes,\n}\n\nconst Heading = Text.withComponent('h1')\n\nHeading.defaultProps = {\n    fontSize: 5,\n    lineHeight: 1.5,\n    m: 0,\n}\n\nconst Layout = ({ children }) => <div className=\"layout\">{children}</div>\n\nexport default ({ Component, pageProps }) => (\n    <ThemeProvider theme={theme}>\n        <Root>\n            <Style />\n            <Header />\n            <Component {...pageProps} />\n        </Root>\n    </ThemeProvider>\n)\n\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

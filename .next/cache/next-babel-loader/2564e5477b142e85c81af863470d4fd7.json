@@ -1,0 +1,15 @@
+{
+  "ast": null,
+  "code": "var _jsxFileName = \"/Users/jensamunch/Documents/nextjs/components/Footer.js\";\nimport React from \"react\";\nvar __jsx = React.createElement;\n\nvar Footer = function Footer() {\n  return __jsx(\"ul\", {\n    \"class\": \"flex mt-5 mr-3 bg-white dark:bg-black\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 2\n    },\n    __self: this\n  }, __jsx(\"li\", {\n    \"class\": \"text-gray-900 dark:white\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 3\n    },\n    __self: this\n  }, \"Footer\"));\n};\n\nexport default Footer;",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/jensamunch/Documents/nextjs/components/Footer.js"],
+    "names": ["Footer"],
+    "mappings": ";;;;AAAA,IAAMA,MAAM,GAAG,SAATA,MAAS;AAAA,SACf;AAAI,aAAM,uCAAV;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE;AAAI,aAAM,0BAAV;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,cADF,CADe;AAAA,CAAf;;AAQA,eAAeA,MAAf",
+    "sourcesContent": [
+      "const Footer = () => (\n<ul class=\"flex mt-5 mr-3 bg-white dark:bg-black\">\n  <li class=\"text-gray-900 dark:white\">\n  Footer\n  </li>\n</ul>\n);\n\nexport default Footer;"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

@@ -1,0 +1,15 @@
+{
+  "ast": null,
+  "code": "var _jsxFileName = \"/Users/jensamunch/Documents/nextjs/components/Header.js\";\nimport React from \"react\";\nvar __jsx = React.createElement;\nimport Link from 'next/link';\nimport { NavLink, Flex } from 'theme-ui';\n\nvar Header = function Header() {\n  return __jsx(Flex, {\n    as: \"nav\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 8\n    },\n    __self: this\n  }, __jsx(Link, {\n    href: \"/\",\n    passHref: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 9\n    },\n    __self: this\n  }, __jsx(NavLink, {\n    p: 2,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }, \"Home\")), __jsx(Link, {\n    href: \"/Hello\",\n    passHref: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 15\n    },\n    __self: this\n  }, __jsx(NavLink, {\n    p: 2,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 16\n    },\n    __self: this\n  }, \"Hello\")), __jsx(Link, {\n    href: \"/About\",\n    passHref: true,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 21\n    },\n    __self: this\n  }, __jsx(NavLink, {\n    p: 2,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 22\n    },\n    __self: this\n  }, \"About\")));\n};\n\nexport default Header;",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/jensamunch/Documents/nextjs/components/Header.js"],
+    "names": ["Link", "NavLink", "Flex", "Header"],
+    "mappings": ";;;AAAA,OAAOA,IAAP,MAAiB,WAAjB;AACA,SACEC,OADF,EAEEC,IAFF,QAGO,UAHP;;AAKA,IAAMC,MAAM,GAAG,SAATA,MAAS;AAAA,SACb,MAAC,IAAD;AAAM,IAAA,EAAE,EAAC,KAAT;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,IAAD;AAAM,IAAA,IAAI,EAAC,GAAX;AAAe,IAAA,QAAQ,MAAvB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,OAAD;AAAS,IAAA,CAAC,EAAE,CAAZ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,YADF,CADF,EAOE,MAAC,IAAD;AAAM,IAAA,IAAI,EAAC,QAAX;AAAoB,IAAA,QAAQ,MAA5B;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,OAAD;AAAS,IAAA,CAAC,EAAE,CAAZ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,aADF,CAPF,EAaE,MAAC,IAAD;AAAM,IAAA,IAAI,EAAC,QAAX;AAAoB,IAAA,QAAQ,MAA5B;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,OAAD;AAAS,IAAA,CAAC,EAAE,CAAZ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,aADF,CAbF,CADa;AAAA,CAAf;;AAuBA,eAAeA,MAAf",
+    "sourcesContent": [
+      "import Link from 'next/link';\nimport {\n  NavLink,\n  Flex\n} from 'theme-ui'\n\nconst Header = () => (\n  <Flex as='nav'>\n    <Link href=\"/\" passHref>\n      <NavLink p={2}>\n        Home\n      </NavLink>\n    </Link>\n\n    <Link href=\"/Hello\" passHref>\n      <NavLink p={2}>\n        Hello\n    </NavLink>\n    </Link>\n\n    <Link href=\"/About\" passHref>\n      <NavLink p={2}>\n        About\n    </NavLink>\n    </Link>\n\n  </Flex>\n);\n\nexport default Header;\n\n\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

@@ -1,0 +1,15 @@
+{
+  "ast": null,
+  "code": "var _jsxFileName = \"/Users/jensamunch/Documents/nextjs/pages/index.js\";\nimport React from \"react\";\nvar __jsx = React.createElement;\nimport { Box } from 'rebass/styled-components';\nexport default (function () {\n  return __jsx(\"div\", {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 4\n    },\n    __self: this\n  }, __jsx(Box, {\n    px: [3, 4],\n    py: [5, 6],\n    color: \"white\",\n    bg: \"blue\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5\n    },\n    __self: this\n  }, \"HELLO\"));\n});",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/jensamunch/Documents/nextjs/pages/index.js"],
+    "names": ["Box"],
+    "mappings": ";;;AAAA,SAASA,GAAT,QAAoB,0BAApB;AAEA,gBAAe;AAAA,SACb;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE,MAAC,GAAD;AAAK,IAAA,EAAE,EAAE,CAAC,CAAD,EAAI,CAAJ,CAAT;AAAiB,IAAA,EAAE,EAAE,CAAC,CAAD,EAAI,CAAJ,CAArB;AAA6B,IAAA,KAAK,EAAC,OAAnC;AAA2C,IAAA,EAAE,EAAC,MAA9C;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,aADF,CADa;AAAA,CAAf",
+    "sourcesContent": [
+      "import { Box } from 'rebass/styled-components'\n\nexport default () => (\n  <div>\n    <Box px={[3, 4]} py={[5, 6]} color=\"white\" bg=\"blue\">\n      HELLO\n    </Box>\n  </div>\n)\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}
