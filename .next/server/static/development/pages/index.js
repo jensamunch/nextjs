@@ -287,6 +287,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+
 function Todo() {
   const {
     0: value,
@@ -329,27 +330,26 @@ function Todo() {
   return Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
-    sx: {
-      fontSize: 4,
-      color: "text"
-    },
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 44
     },
     __self: this
-  }, "Todo List"), Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-    sx: {
-      fontSize: 1,
-      color: "text"
-    },
+  }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_0__["Box"], {
+    p: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 45
+    },
+    __self: this
+  }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_0__["Heading"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, "Todo List")), Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_0__["Box"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
     },
     __self: this
   }, todos.map((todo, index) => Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_TodoSingle__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -360,17 +360,23 @@ function Todo() {
     deleteTodo: deleteTodo,
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }))), Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_0__["Box"], {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 59
     },
     __self: this
-  }))), Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_TodoForm__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_TodoForm__WEBPACK_IMPORTED_MODULE_3__["default"], {
     addTodo: addTodo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 60
     },
     __self: this
-  }));
+  })));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Todo);
@@ -397,11 +403,12 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 /** @jsx jsx */
 
 
+
 function TodoForm(props) {
   const {
     0: searchTerm,
     1: setSearchTerm
-  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])('');
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])("");
 
   const onChange = e => {
     const {
@@ -414,35 +421,50 @@ function TodoForm(props) {
     // Prevents GET request/page refresh on submit
     e.preventDefault();
     props.addTodo(searchTerm);
-    setSearchTerm('');
+    setSearchTerm("");
   };
 
-  return Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])("form", {
-    onSubmit: onSubmit,
+  return Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_0__["Flex"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
-  }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])("input", {
+  }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_0__["Box"], {
+    as: "form",
+    onSubmit: onSubmit,
+    p: 2,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_0__["Input"], {
+    sx: {
+      display: "inline-block",
+      pr: 3
+    },
     type: "text",
     value: searchTerm,
     placeholder: "Enter search term...",
     onChange: onChange,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }), Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])("button", {
-    type: "submit",
-    disabled: props.isSearching,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
-  }, "SUBMIT"));
+  }), " ", Object(theme_ui__WEBPACK_IMPORTED_MODULE_0__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_0__["Button"], {
+    sx: {
+      display: "inline-block",
+      pr: 3
+    },
+    type: "submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, "Submit")));
 }
 /* harmony default export */ __webpack_exports__["default"] = (TodoForm);
 
@@ -470,27 +492,42 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function TodoSingle(props) {
-  return Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+  return Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Flex"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+  }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    p: 2,
     sx: {
-      display: "inline-block",
-      color: "text",
-      fontSize: 3,
-      pr: 3,
-      mb: 2,
-      textDecoration: props.todo.isCompleted ? "line-through" : ""
+      flex: "1 1 auto"
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, props.todo.text), Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+  }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Text"], {
+    sx: {
+      color: "text",
+      fontSize: 3,
+      textDecoration: props.todo.isCompleted ? "line-through" : ""
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, props.todo.text)), Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    p: 2,
+    bg: "muted",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Button"], {
     sx: {
       display: "inline-block",
       pr: 3
@@ -501,14 +538,22 @@ function TodoSingle(props) {
       lineNumber: 20
     },
     __self: this
-  }, "Complete"), Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+  }, "Complete")), Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    p: 2,
+    bg: "muted",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Button"], {
     onClick: () => props.deleteTodo(props.index),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 31
     },
     __self: this
-  }, "Delete"));
+  }, "Delete")));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (TodoSingle);

@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import { Button, Text, Flex, Box, Heading } from "theme-ui"
 
 import React, { useState } from "react"
 import TodoSingle from "../components/TodoSingle"
@@ -41,20 +42,10 @@ function Todo() {
 
   return (
     <div>
-      <h1
-        sx={{
-          fontSize: 4,
-          color: "text",
-        }}
-      >
-        Todo List
-      </h1>
-      <div
-        sx={{
-          fontSize: 1,
-          color: "text",
-        }}
-      >
+      <Box p={2}>
+        <Heading>Todo List</Heading>
+      </Box>
+      <Box>
         {todos.map((todo, index) => (
           <TodoSingle
             key={index}
@@ -64,8 +55,10 @@ function Todo() {
             deleteTodo={deleteTodo}
           />
         ))}
-      </div>
-      <TodoForm addTodo={addTodo} />
+      </Box>
+      <Box>
+        <TodoForm addTodo={addTodo} />
+      </Box>
     </div>
   )
 }
