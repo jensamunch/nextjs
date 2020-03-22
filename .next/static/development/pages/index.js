@@ -110,7 +110,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
     },
     __self: this
   }, __jsx(theme_ui__WEBPACK_IMPORTED_MODULE_3__["NavLink"], {
-    pr: 5,
+    pr: 3,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -125,14 +125,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
     },
     __self: this
   }, __jsx(theme_ui__WEBPACK_IMPORTED_MODULE_3__["NavLink"], {
-    pr: 5,
+    pr: 3,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
   }, "About")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/another-page",
+    href: "/another",
     passHref: true,
     __source: {
       fileName: _jsxFileName,
@@ -140,13 +140,13 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
     },
     __self: this
   }, __jsx(theme_ui__WEBPACK_IMPORTED_MODULE_3__["NavLink"], {
-    pr: 5,
+    pr: 3,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
-  }, "Another Page")), __jsx(theme_ui__WEBPACK_IMPORTED_MODULE_3__["NavLink"], {
+  }, "Another")), __jsx(theme_ui__WEBPACK_IMPORTED_MODULE_3__["NavLink"], {
     onClick: function onClick(e) {
       setColorMode(colorMode === "default" ? "dark" : "default");
     },
@@ -227,6 +227,13 @@ function Todo() {
     setTodos(newTodos);
   };
 
+  var deleteTodo = function deleteTodo(index) {
+    var removeTodos = Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(todos);
+
+    removeTodos.splice(index, 1);
+    setTodos(removeTodos);
+  };
+
   var addTodo = function addTodo(text) {
     var newTodos = [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(todos), [{
       text: text,
@@ -238,7 +245,7 @@ function Todo() {
   return Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 43
     },
     __self: this
   }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])("h1", {
@@ -248,17 +255,17 @@ function Todo() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 44
     },
     __self: this
-  }, "Todo List"), Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])("ul", {
+  }, "Todo List"), Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     sx: {
       fontSize: 1,
       color: "text"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 52
     },
     __self: this
   }, todos.map(function (todo, index) {
@@ -267,9 +274,10 @@ function Todo() {
       index: index,
       todo: todo,
       completeTodo: completeTodo,
+      deleteTodo: deleteTodo,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54
+        lineNumber: 59
       },
       __self: this
     });
@@ -277,7 +285,7 @@ function Todo() {
     addTodo: addTodo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 68
     },
     __self: this
   }));
@@ -373,29 +381,51 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 /** @jsx jsx */
 
 
+
 function TodoSingle(props) {
-  return Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])("li", {
-    sx: {
-      m: 1,
-      border: "1px",
-      color: "text",
-      textDecoration: props.todo.isCompleted ? "line-through" : ""
-    },
+  return Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, props.todo.text, Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])("button", {
+  }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    sx: {
+      display: "inline-block",
+      color: "text",
+      fontSize: 3,
+      pr: 3,
+      mb: 2,
+      textDecoration: props.todo.isCompleted ? "line-through" : ""
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, props.todo.text), Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    sx: {
+      display: "inline-block",
+      pr: 3
+    },
     onClick: function onClick() {
       return props.completeTodo(props.index);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 20
     },
     __self: this
-  }, "Complete"));
+  }, "Complete"), Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(theme_ui__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    onClick: function onClick() {
+      return props.deleteTodo(props.index);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "Delete"));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (TodoSingle);
@@ -16713,7 +16743,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }, Object(theme_ui__WEBPACK_IMPORTED_MODULE_1__["jsx"])(_components_Head__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "INDEX",
+    title: "TODO APP",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9

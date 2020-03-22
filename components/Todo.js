@@ -10,25 +10,30 @@ function Todo() {
 
   const [todos, setTodos] = useState([
     {
-        text: "Learn about React",
-        isCompleted: false
-      },
-      {
-        text: "Meet friend for lunch",
-        isCompleted: false
-      },
-      {
-        text: "Build really cool todo app",
-        isCompleted: false
-      }
+      text: "Learn about React",
+      isCompleted: false,
+    },
+    {
+      text: "Meet friend for lunch",
+      isCompleted: false,
+    },
+    {
+      text: "Build really cool todo app",
+      isCompleted: false,
+    },
   ])
 
-  const completeTodo = index => {
-    const newTodos = [...todos];
-    newTodos[index].isCompleted = true;
-    setTodos(newTodos);
-  };
+  const completeTodo = (index) => {
+    const newTodos = [...todos]
+    newTodos[index].isCompleted = true
+    setTodos(newTodos)
+  }
 
+  const deleteTodo = (index) => {
+    const removeTodos = [...todos]
+    removeTodos.splice(index, 1)
+    setTodos(removeTodos)
+  }
   const addTodo = (text) => {
     const newTodos = [...todos, { text, isCompleted: false }]
     setTodos(newTodos)
@@ -44,16 +49,22 @@ function Todo() {
       >
         Todo List
       </h1>
-      <ul
+      <div
         sx={{
           fontSize: 1,
           color: "text",
         }}
       >
         {todos.map((todo, index) => (
-          <TodoSingle key={index} index={index} todo={todo} completeTodo={completeTodo} />
+          <TodoSingle
+            key={index}
+            index={index}
+            todo={todo}
+            completeTodo={completeTodo}
+            deleteTodo={deleteTodo}
+          />
         ))}
-      </ul>
+      </div>
       <TodoForm addTodo={addTodo} />
     </div>
   )

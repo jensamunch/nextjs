@@ -14,13 +14,13 @@ export default (props) => {
       }}
     >
       <Link href="/" passHref>
-        <NavLink pr={5}>Home</NavLink>
+        <NavLink pr={3}>Home</NavLink>
       </Link>
       <Link href="/about" passHref>
-        <NavLink pr={5}>About</NavLink>
+        <NavLink pr={3}>About</NavLink>
       </Link>
-      <Link href="/another-page" passHref>
-        <NavLink pr={5}>Another Page</NavLink>
+      <Link href="/another" passHref>
+        <NavLink pr={3}>Another</NavLink>
       </Link>
       <NavLink
         onClick={(e) => {
