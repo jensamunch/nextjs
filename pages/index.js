@@ -6,7 +6,7 @@ import Todo from "../components/Todo"
 
 export default (props) => (
   <div>
-    <Head title="INDEX" />
+    <Head title="TODO APP" />
     <Navbar />
     <Flex>
       <Box>
