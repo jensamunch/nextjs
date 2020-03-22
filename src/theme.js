@@ -1,35 +1,45 @@
+// https://colorhunt.co/palette/238
+
 export default {
   useCustomProperties: true,
+
   colors: {
     text: "#000",
     background: "#fff",
-    primary: "hotpink",
-    secondary: "indigo",
+    primary: "#2b2e4a",
+    secondary: "#e84545",
+    tertiary: "#903749",
+    quaternary: "#53354a",
+    gray100: "#f7fafc",
+    gray200: "#edf2f7",
     modes: {
       dark: {
         text: "#fff",
         background: "#222",
-        primary: "hotpink",
-        secondary: "indigo",
       },
     },
   },
+
   sizes: {
     container: 1280,
   },
-  links: {
-    nav: {
-      darkswitcher: {
-        paddingBottom: "0px",
-        paddingTop: "4px",
-      },
-    },
-  },
+
   fonts: {
     body:
       'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     heading: "inherit",
   },
+
+  links: {
+    nav: {
+      color: "text",
+      textDecoration: "none",
+      ":hover": {
+        color: "secondary",
+      },
+    },
+  },
+
   styles: {
     root: {
       fontFamily: "body",

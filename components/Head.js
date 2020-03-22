@@ -8,6 +8,7 @@ const Headhtml = props => (
         content="initial-scale=1.0, width=device-width"
         key="viewport"
       />
+      <link rel="shortcut icon" href="/static/favicon.ico" />
     </Head>
   );
 
