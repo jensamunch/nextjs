@@ -26,60 +26,57 @@ const user = {
   lastName: "Perez",
 }
 
-
 export default (props) => (
-  <div>
+  <Box px={[2, 5, 5]}>
     <Head title="ANOTHER" />
     <Navbar />
-    <Flex>
-      <Box
+    <Box
+      sx={{
+        m: 1,
+        p: [1, 2, 2],
+        flex: "1 1 auto",
+        border: "1px",
+        borderColor: "lightpink",
+        borderStyle: "solid",
+      }}
+    >
+      <Heading>Home 1st column</Heading>
+      <FormatName />
+      <div
         sx={{
-          m: 1,
-          p: [1, 2, 2],
-          flex: "1 1 auto",
-          border: "1px",
-          borderColor: "lightpink",
-          borderStyle: "solid",
+          px: 3, // padding-left & padding-right
+          // paddingX: 3 will also work
+          py: 4, // padding-top & padding-bottom
+          mb: 3, // margin-bottom
+          bg: "red",
         }}
       >
-        <Heading>Home 1st column</Heading>
-        <FormatName />
-        <div
-          sx={{
-            px: 3, // padding-left & padding-right
-            // paddingX: 3 will also work
-            py: 4, // padding-top & padding-bottom
-            mb: 3, // margin-bottom
-            bg: "red",
-          }}
-        >
-          DIV
-        </div>
-        <div
-          sx={{
-            px: 3, // padding-left & padding-right
-            // paddingX: 3 will also work
-            py: 4, // padding-top & padding-bottom
-            mb: 3, // margin-bottom
-            bg: "blue",
-            m: ["0px", "50px", "50px"],
-          }}
-        >
-          DIV
-        </div>
-      </Box>
-      <Box
+        DIV
+      </div>
+      <div
         sx={{
-          flex: "1 1 auto",
-          m: 1,
-          p: [1, 2, 2],
-          border: "1px",
-          borderColor: "lightpink",
-          borderStyle: "solid",
+          px: 3, // padding-left & padding-right
+          // paddingX: 3 will also work
+          py: 4, // padding-top & padding-bottom
+          mb: 3, // margin-bottom
+          bg: "blue",
+          m: ["0px", "50px", "50px"],
         }}
       >
-        <Heading>Home 2nd column</Heading>
-      </Box>
-    </Flex>
-  </div>
+        DIV
+      </div>
+    </Box>
+    <Box
+      sx={{
+        flex: "1 1 auto",
+        m: 1,
+        p: [1, 2, 2],
+        border: "1px",
+        borderColor: "lightpink",
+        borderStyle: "solid",
+      }}
+    >
+      <Heading>Home 2nd column</Heading>
+    </Box>
+  </Box>
 )

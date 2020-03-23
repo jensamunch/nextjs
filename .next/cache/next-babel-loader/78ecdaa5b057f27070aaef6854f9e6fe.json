@@ -1,7 +1,0 @@
-{
-  "ast": null,
-  "code": "import React from \"react\";\nvar __jsx = React.createElement;\nimport '../styles/index.css';\nimport Header from '../components/Header';\nexport default function About() {\n  return __jsx(\"div\", null, __jsx(Header, null), __jsx(\"div\", {\n    className: \"max-w-sm rounded overflow-hidden shadow-lg\"\n  }, __jsx(\"img\", {\n    className: \"w-full\",\n    src: \"/img/card-top.jpg\",\n    alt: \"Sunset in the mountains\"\n  }), __jsx(\"div\", {\n    className: \"px-6 py-4\"\n  }, __jsx(\"div\", {\n    className: \"font-bold text-xl mb-2\"\n  }, \"The Coldest Sunset\"), __jsx(\"p\", {\n    className: \"text-gray-700 text-base\"\n  }, \"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.\")), __jsx(\"div\", {\n    className: \"px-6 py-4\"\n  }, __jsx(\"span\", {\n    className: \"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2\"\n  }, \"#photography\"), __jsx(\"span\", {\n    className: \"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2\"\n  }, \"#travel\"), __jsx(\"span\", {\n    className: \"inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700\"\n  }, \"#winter\"))));\n}",
-  "map": null,
-  "metadata": {},
-  "sourceType": "module"
-}

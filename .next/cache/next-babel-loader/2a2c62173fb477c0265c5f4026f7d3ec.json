@@ -1,7 +1,0 @@
-{
-  "ast": null,
-  "code": "import React from \"react\";\nvar __jsx = React.createElement;\n\n/** @jsx jsx */\nimport { jsx, Box, Heading } from 'theme-ui';\nexport default (props => jsx(Box, {\n  sx: {\n    maxWidth: 500,\n    mx: 'auto',\n    p: 3,\n    border: '1px',\n    borderColor: 'lightpink',\n    borderStyle: 'solid'\n  }\n}, jsx(Heading, null, \"About\")));",
-  "map": null,
-  "metadata": {},
-  "sourceType": "module"
-}

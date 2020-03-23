@@ -24,9 +24,14 @@ function Todo() {
     },
   ])
 
-  const completeTodo = (index) => {
+  const changeTodo = (index) => {
     const newTodos = [...todos]
-    newTodos[index].isCompleted = true
+    console.log(newTodos[index])
+    if (newTodos[index].isCompleted == false) {
+      newTodos[index].isCompleted = true
+    } else {
+      newTodos[index].isCompleted = false
+    }
     setTodos(newTodos)
   }
 
@@ -42,23 +47,19 @@ function Todo() {
 
   return (
     <div>
-      <Box p={2}>
-        <Heading>Todo List</Heading>
-      </Box>
-      <Box>
+      <Heading>Todo List</Heading>
+      <Box py={3}>
         {todos.map((todo, index) => (
           <TodoSingle
             key={index}
             index={index}
             todo={todo}
-            completeTodo={completeTodo}
+            changeTodo={changeTodo}
             deleteTodo={deleteTodo}
           />
         ))}
       </Box>
-      <Box>
-        <TodoForm addTodo={addTodo} />
-      </Box>
+      <TodoForm addTodo={addTodo} />
     </div>
   )
 }

@@ -1,11 +1,40 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Button, Text, Flex, Box } from "theme-ui"
+import { Grid, Button, Text, Flex, Box } from "theme-ui"
+import { FiCheck, FiTrash } from "react-icons/fi"
 
 function TodoSingle(props) {
   return (
-    <Flex>
-      <Box p={2} sx={{ flex: "1 1 auto" }}>
+    <Grid gap={2} columns={[1, "80px auto"]}>
+      <Box>
+        <span
+          sx={{
+            pr: 3,
+          }}
+          onClick={() => props.changeTodo(props.index)}
+        >
+          <FiCheck
+            sx={{
+              position: "relative",
+              top: "5px",
+            }}
+          />
+        </span>
+        <span
+          sx={{
+            pr: 3,
+          }}
+          onClick={() => props.deleteTodo(props.index)}
+        >
+          <FiTrash
+            sx={{
+              position: "relative",
+              top: "5px",
+            }}
+          />
+        </span>
+      </Box>
+      <Box bg="muted">
         <Text
           sx={{
             color: "text",
@@ -16,21 +45,7 @@ function TodoSingle(props) {
           {props.todo.text}
         </Text>
       </Box>
-      <Box p={2} bg="muted">
-        <Button
-          sx={{
-            display: "inline-block",
-            pr: 3,
-          }}
-          onClick={() => props.completeTodo(props.index)}
-        >
-          Complete
-        </Button>
-      </Box>
-      <Box p={2} bg="muted">
-        <Button onClick={() => props.deleteTodo(props.index)}>Delete</Button>
-      </Box>
-    </Flex>
+    </Grid>
   )
 }
 

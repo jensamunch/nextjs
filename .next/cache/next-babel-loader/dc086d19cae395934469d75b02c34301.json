@@ -1,7 +1,0 @@
-{
-  "ast": null,
-  "code": "import React from \"react\";\nvar __jsx = React.createElement;\n\n/** @jsx jsx */\nimport { jsx, Heading, Box, Flex } from 'theme-ui';\n\nclass FormatName extends React.Component {\n  render() {\n    return jsx(\"div\", {\n      sx: {\n        p: 2\n      }\n    }, formatName(user));\n  }\n\n}\n\nfunction formatName(user) {\n  return user.firstName + ' ' + user.lastName;\n}\n\nconst user = {\n  firstName: 'Harper',\n  lastName: 'Perez'\n};\nconst element = jsx(\"h1\", null, \"Hello, \", formatName(user), \"!\");\nexport default (props => jsx(Flex, null, jsx(Box, {\n  sx: {\n    m: 1,\n    p: [1, 2, 2],\n    flex: '1 1 auto',\n    border: '1px',\n    borderColor: 'lightpink',\n    borderStyle: 'solid'\n  }\n}, jsx(Heading, null, \"Home 1st column\"), jsx(FormatName, null), jsx(\"div\", {\n  sx: {\n    px: 3,\n    // padding-left & padding-right\n    // paddingX: 3 will also work\n    py: 4,\n    // padding-top & padding-bottom\n    mb: 3,\n    // margin-bottom\n    bg: 'red'\n  }\n}, \"DIV\"), jsx(\"div\", {\n  sx: {\n    px: 3,\n    // padding-left & padding-right\n    // paddingX: 3 will also work\n    py: 4,\n    // padding-top & padding-bottom\n    mb: 3,\n    // margin-bottom\n    bg: 'blue',\n    m: ['0px', '50px', '50px']\n  }\n}, \"DIV\")), jsx(Box, {\n  sx: {\n    flex: '1 1 auto',\n    m: 1,\n    p: [1, 2, 2],\n    border: '1px',\n    borderColor: 'lightpink',\n    borderStyle: 'solid'\n  }\n}, jsx(Heading, null, \"Home 2nd column\"))));",
-  "map": null,
-  "metadata": {},
-  "sourceType": "module"
-}

@@ -5,13 +5,11 @@ import Navbar from "../components/Navbar"
 import Todo from "../components/Todo"
 
 export default (props) => (
-  <div>
-    <Head title="TODO APP" />
+  <Box 
+  px={[2,5,5]}
+  >
+    <Head title="Todo App" />
     <Navbar />
-    <Flex>
-      <Box>
-        <Todo />
-      </Box>
-    </Flex>
-  </div>
+    <Todo />
+  </Box>
 )

@@ -10,6 +10,7 @@ export default (props) => {
       as="nav"
       sx={{
         py: 4, // padding-top & padding-bottom
+        px: 2,
         mb: 3, // margin-bottom
       }}
     >

@@ -4,7 +4,7 @@ import Head from "../components/Head"
 import Navbar from "../components/Navbar"
 
 export default (props) => (
-  <div>
+  <Box px={[2, 5, 5]}>
     <Head title="ABOUT" />
     <Navbar />
     <Box
@@ -19,5 +19,5 @@ export default (props) => (
     >
       <Heading>About</Heading>
     </Box>
-  </div>
+  </Box>
 )
