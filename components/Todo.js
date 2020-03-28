@@ -1,7 +1,3 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
-import { Button, Text, Flex, Box, Heading } from "theme-ui"
-
 import React, { useState } from "react"
 import TodoSingle from "../components/TodoSingle"
 import TodoForm from "../components/TodoForm"

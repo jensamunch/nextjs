@@ -1,7 +1,5 @@
-/** @jsx jsx */
 
 import React, { useState } from "react"
-import { jsx, Box, Input, Button } from "theme-ui"
 
 export function TodoForm(props) {
   const [searchTerm, setSearchTerm] = useState("")

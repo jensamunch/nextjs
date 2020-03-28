@@ -1,15 +1,12 @@
-/** @jsx jsx */
-import { jsx, Heading, Box, Flex } from "theme-ui"
+import { Layout } from "antd"
+const { Header, Footer, Content } = Layout
 import Head from "../components/Head"
 import Navbar from "../components/Navbar"
-import Todo from "../components/Todo"
 
 export default (props) => (
-  <Box 
-  px={[2,5,5]}
-  >
-    <Head title="Todo App" />
-    <Navbar />
-    <Todo />
-  </Box>
+  <Layout>
+    <Header><Navbar/></Header>
+    <Content>Content</Content>
+    <Footer>Footer</Footer>
+  </Layout>
 )

@@ -1,38 +1,46 @@
-import Link from "next/link"
-import { NavLink, Flex, useColorMode, jsx} from "theme-ui"
-import MoonIcon from "../icons/moon.svg"
-import SunIcon from "../icons/sun.svg"
+import React, { useState } from 'react';
 
-export default (props) => {
-  const [colorMode, setColorMode] = useColorMode()
+import { Menu } from "antd"
+import { MailOutlined, AppstoreOutlined, SettingOutlined } from "@ant-design/icons"
+
+const Navbar = ({ value }) => {
+
+  const [greeting, setGreeting] = useState(
+    'Hello Function Component!'
+  );
+
+  const [current, setCurrent] = useState(
+  ['alipay']
+  );
+
+  const handleClick = e => {
+    console.log('click ', e);
+    this.setState({
+      current: e.key,
+    });
+  };
+
   return (
-    <Flex
-      as="nav"
-      sx={{
-        py: 4, // padding-top & padding-bottom
-        px: 2,
-        mb: 3, // margin-bottom
-      }}
+    <Menu
+      onClick={handleClick}
+      selectedKeys={current}
+      mode="horizontal"
     >
-      <Link href="/" passHref>
-        <NavLink pr={3}>Home</NavLink>
-      </Link>
-      <Link href="/about" passHref>
-        <NavLink pr={3}>About</NavLink>
-      </Link>
-      <Link href="/another" passHref>
-        <NavLink pr={3}>Another</NavLink>
-      </Link>
-      <NavLink
-        onClick={(e) => {
-          setColorMode(colorMode === "default" ? "dark" : "default")
-        }}
-        sx={{
-          mt: -1,
-        }}
-      >
-        {colorMode === "default" ? <img src={MoonIcon} /> : <img src={SunIcon} />}
-      </NavLink>
-    </Flex>
+      <Menu.Item key="mail">
+        <MailOutlined />
+        Navigation One
+      </Menu.Item>
+      <Menu.Item key="app" disabled>
+        <AppstoreOutlined />
+        Navigation Two
+      </Menu.Item>
+      <Menu.Item key="alipay">
+        <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
+          Navigation Four - Link
+        </a>
+      </Menu.Item>
+    </Menu>
   )
 }
+
+export default Navbar

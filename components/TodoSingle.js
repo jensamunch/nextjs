@@ -1,7 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
-import { Grid, Button, Text, Flex, Box } from "theme-ui"
-import { FiCheck, FiTrash } from "react-icons/fi"
+
 
 function TodoSingle(props) {
   return (
