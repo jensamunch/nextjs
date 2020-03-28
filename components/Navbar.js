@@ -1,43 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState } from "react"
+import { useRouter } from "next/router"
+import Link from "next/link"
 
 import { Menu } from "antd"
-import { MailOutlined, AppstoreOutlined, SettingOutlined } from "@ant-design/icons"
+import { CheckSquareOutlined, HeartOutlined } from "@ant-design/icons"
 
 const Navbar = ({ value }) => {
+  const router = useRouter()
 
-  const [greeting, setGreeting] = useState(
-    'Hello Function Component!'
-  );
-
-  const [current, setCurrent] = useState(
-  ['alipay']
-  );
-
-  const handleClick = e => {
-    console.log('click ', e);
-    this.setState({
-      current: e.key,
-    });
-  };
+  const handleClick = (e) => {
+    console.log("click ", e)
+    router.push(e.key)
+  }
 
   return (
-    <Menu
-      onClick={handleClick}
-      selectedKeys={current}
-      mode="horizontal"
-    >
-      <Menu.Item key="mail">
-        <MailOutlined />
-        Navigation One
+    <Menu onClick={handleClick} selectedKeys={[router.pathname]} mode="horizontal">
+      <Menu.Item key="/">
+        <CheckSquareOutlined />
+        Todo App
       </Menu.Item>
-      <Menu.Item key="app" disabled>
-        <AppstoreOutlined />
-        Navigation Two
-      </Menu.Item>
-      <Menu.Item key="alipay">
-        <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
-          Navigation Four - Link
-        </a>
+      <Menu.Item key="/about">
+        <HeartOutlined />
+        About
       </Menu.Item>
     </Menu>
   )
