@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar"
 
 export default (props) => (
   <div>
+    <Head title="About"></Head>
     <div className="navbar">
       <Navbar />
     </div>

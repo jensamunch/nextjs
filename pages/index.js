@@ -1,6 +1,7 @@
 import { Row, Col } from "antd"
 import Head from "../components/Head"
 import Navbar from "../components/Navbar"
+import Todo from "../components/Todo"
 
 export default (props) => (
   <div>
@@ -10,7 +11,6 @@ export default (props) => (
         sm={24}
         lg={20}
         xl={20}
-        style={{ color: "gray", borderStyle: "dotted" }}
       >
         <Navbar />
       </Col>
@@ -21,9 +21,8 @@ export default (props) => (
         sm={24}
         lg={20}
         xl={20}
-        style={{ color: "gray", borderStyle: "dotted" }}
       >
-        NATIVE
+        <Todo />
       </Col>
     </Row>
     <style jsx>{`
