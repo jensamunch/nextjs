@@ -1,28 +1,25 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Button, Text, Flex, Box, Heading } from "theme-ui"
-
-import React, { useState } from "react"
-import TodoSingle from "../components/TodoSingle"
+import React, { useState, useEffect } from "react"
+import TodoRow from "../components/TodoRow"
 import TodoForm from "../components/TodoForm"
 
 function Todo() {
-  const [value, setValue] = useState("")
 
-  const [todos, setTodos] = useState([
-    {
-      text: "Learn about React",
-      isCompleted: false,
-    },
-    {
-      text: "Meet friend for lunch",
-      isCompleted: false,
-    },
-    {
-      text: "Build really cool todo app",
-      isCompleted: false,
-    },
-  ])
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    async function getData() {
+      const res = await fetch('/api')
+      const newData = await res.json()
+      setData(newData)
+    }
+    getData()
+  }, [])
+
+  const [todo, setTodo] = useState("jens")
+  const [value, setValue] = useState("niklas")
 
   const changeTodo = (index) => {
     const newTodos = [...todos]
@@ -41,7 +38,7 @@ function Todo() {
     setTodos(removeTodos)
   }
   const addTodo = (text) => {
-    const newTodos = [...todos, { text, isCompleted: false }]
+    const newTodos = [...todos, { title, completed: false }]
     setTodos(newTodos)
   }
 
@@ -49,15 +46,17 @@ function Todo() {
     <div>
       <Heading>Todo List</Heading>
       <Box py={3}>
-        {todos.map((todo, index) => (
-          <TodoSingle
-            key={index}
-            index={index}
-            todo={todo}
-            changeTodo={changeTodo}
-            deleteTodo={deleteTodo}
-          />
-        ))}
+        {data.length > 0 ? (
+          data.map((d) => (
+            <TodoRow completed={d.data.completed} title={d.data.title} />
+          ))
+        ) : (
+          <>
+            <TodoRow loading />
+            <TodoRow loading />
+            <TodoRow loading />
+          </>
+        )}
       </Box>
       <TodoForm addTodo={addTodo} />
     </div>

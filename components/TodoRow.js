@@ -1,17 +1,17 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Grid, Button, Text, Flex, Box } from "theme-ui"
+import { Flex, Button, Text, Box } from "theme-ui"
 import { FiCheck, FiTrash } from "react-icons/fi"
 
-function TodoSingle(props) {
+function TodoRow({loading, title, completed, changeTodo, deleteTodo}) {
   return (
-    <Grid gap={2} columns={"50px auto"}>
-      <Box>
+    <Flex>
+      <Box p={2}>
         <span
           sx={{
             pr: 2,
           }}
-          onClick={() => props.changeTodo(props.index)}
+          onClick={() => changeTodo()}
         >
           <FiCheck
             sx={{
@@ -20,9 +20,7 @@ function TodoSingle(props) {
             }}
           />
         </span>
-        <span
-          onClick={() => props.deleteTodo(props.index)}
-        >
+        <span onClick={() => deleteTodo()}>
           <FiTrash
             sx={{
               position: "relative",
@@ -31,19 +29,18 @@ function TodoSingle(props) {
           />
         </span>
       </Box>
-      <Box>
+      <Box p={2} bg="muted" sx={{ flex: "1 1 auto" }}>
         <Text
           sx={{
             color: "text",
             fontSize: 3,
-            textDecoration: props.todo.isCompleted ? "line-through" : "",
           }}
         >
-          {props.todo.text}
+          { loading ? "Loading...." : title }
         </Text>
       </Box>
-    </Grid>
+    </Flex>
   )
 }
 
-export default TodoSingle
+export default TodoRow
