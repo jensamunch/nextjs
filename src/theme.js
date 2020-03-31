@@ -26,7 +26,7 @@ export default {
 
   fonts: {
     body:
-      'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+      '"Inter", sans-serif',
     heading: "inherit",
   },
 

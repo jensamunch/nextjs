@@ -5,11 +5,11 @@ import { FiCheck, FiTrash } from "react-icons/fi"
 
 function TodoSingle(props) {
   return (
-    <Grid gap={2} columns={[1, "80px auto"]}>
+    <Grid gap={2} columns={"50px auto"}>
       <Box>
         <span
           sx={{
-            pr: 3,
+            pr: 2,
           }}
           onClick={() => props.changeTodo(props.index)}
         >
@@ -21,9 +21,6 @@ function TodoSingle(props) {
           />
         </span>
         <span
-          sx={{
-            pr: 3,
-          }}
           onClick={() => props.deleteTodo(props.index)}
         >
           <FiTrash
@@ -34,7 +31,7 @@ function TodoSingle(props) {
           />
         </span>
       </Box>
-      <Box bg="muted">
+      <Box>
         <Text
           sx={{
             color: "text",

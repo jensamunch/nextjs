@@ -20,9 +20,6 @@ export default (props) => {
       <Link href="/about" passHref>
         <NavLink pr={3}>About</NavLink>
       </Link>
-      <Link href="/another" passHref>
-        <NavLink pr={3}>Another</NavLink>
-      </Link>
       <NavLink
         onClick={(e) => {
           setColorMode(colorMode === "default" ? "dark" : "default")
