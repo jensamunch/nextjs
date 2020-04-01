@@ -2,7 +2,7 @@
 import { jsx, Heading, Box, Flex } from "theme-ui"
 import Head from "../components/Head"
 import Navbar from "../components/Navbar"
-import Todo from "../components/Todo"
+import Todo from "../components/TodoList"
 
 export default (props) => (
   <Box 

@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
     "build": "next build",
     "start": "next start",
     "deploy": "now --prod",
@@ -18,6 +17,7 @@
     "@mdx-js/loader": "^1.5.5",
     "@next/mdx": "^9.2.1",
     "faunadb": "^2.13.1",
+    "isomorphic-unfetch": "^3.0.0",
     "next": "^9.2.1",
     "next-images": "^1.3.1",
     "prettier": "^2.0.1",
@@ -26,6 +26,6 @@
     "react-icons": "^3.9.0",
     "request": "^2.88.2",
     "theme-ui": "^0.3.1"
-   },
+  },
   "devDependencies": {}
 }

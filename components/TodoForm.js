@@ -1,21 +1,30 @@
 /** @jsx jsx */
-
-import React, { useState } from "react"
 import { jsx, Box, Input, Button } from "theme-ui"
 
-export function TodoForm(props) {
+import React, { useState } from "react"
+
+function TodoForm() {
   const [searchTerm, setSearchTerm] = useState("")
 
   const onChange = (e) => {
-    const { value } = e.target
+    const value = e.target.value
     setSearchTerm(value)
   }
 
-  const onSubmit = (e) => {
-    // Prevents GET request/page refresh on submit
+  function onSubmit(e) {
     e.preventDefault()
-    props.addTodo(searchTerm)
-    setSearchTerm("")
+    console.log(searchTerm)
+    const options = {
+      method: "POST",
+      body: JSON.stringify({title: searchTerm}),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+    fetch("/api/addTodo", options)
+      .then((res) => res.json())
+      .then((data) => setSearchTerm(""))
+      .catch((err) => console.log(err))
   }
 
   return (
@@ -24,12 +33,12 @@ export function TodoForm(props) {
         sx={{
           width: "200px",
           display: "inline",
-          ':focus': {
-            outline:0
-          }
+          ":focus": {
+            outline: 0,
+          },
         }}
         type="text"
-        color= "text"
+        color="text"
         value={searchTerm}
         placeholder="Something to do..."
         onChange={onChange}
@@ -44,9 +53,9 @@ export function TodoForm(props) {
           border: "2px",
           borderColor: "text",
           borderStyle: "solid",
-          ':focus': {
-            outline:0
-          }
+          ":focus": {
+            outline: 0,
+          },
         }}
         type="submit"
       >

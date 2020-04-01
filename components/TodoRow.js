@@ -3,15 +3,15 @@ import { jsx } from "theme-ui"
 import { Flex, Button, Text, Box } from "theme-ui"
 import { FiCheck, FiTrash } from "react-icons/fi"
 
-function TodoRow({loading, title, completed, changeTodo, deleteTodo}) {
-  return (
+function TodoRow({loading, id, title, completed, changeTodo, deleteTodo}) {
+    return (
     <Flex>
       <Box p={2}>
         <span
           sx={{
             pr: 2,
           }}
-          onClick={() => changeTodo()}
+          onClick={() => changeTodo(id)}
         >
           <FiCheck
             sx={{
@@ -20,7 +20,7 @@ function TodoRow({loading, title, completed, changeTodo, deleteTodo}) {
             }}
           />
         </span>
-        <span onClick={() => deleteTodo()}>
+        <span onClick={() => deleteTodo(id)}>
           <FiTrash
             sx={{
               position: "relative",
