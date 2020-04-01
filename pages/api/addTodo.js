@@ -5,14 +5,14 @@ const q = faunadb.query
 const client = new faunadb.Client({ secret })
 
 module.exports = async (req, res) => {
-  console.log("api", req.body.title)
+  console.log(req.body.title)
 
   try {
     const dbs = await client.query(
       q.Create(q.Collection("Todo"), {
         data: { 
           title: req.body.title,
-          completed: false
+          completed: req.body.completed
         },
       })
     )
