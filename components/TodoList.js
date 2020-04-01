@@ -25,6 +25,13 @@ function Todo() {
 
   const addTodo = (e) => {
     e.preventDefault()
+
+    // Update local arrray
+    const newTodos = [...todos, { title: inputTodo, completed: false }]
+    //setTodos(newTodos)
+    console.log(newTodos)
+
+    // Update remote API
     console.log(inputTodo)
     const options = {
       method: "POST",
@@ -35,12 +42,6 @@ function Todo() {
     }
     fetch("/api/addTodo", options)
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data)
-        setSearchTerm("")
-        const newTodos = [...todos, { title: inputTodo, completed: false }]
-        setTodos(newTodos)
-      })
       .catch((err) => console.log(err))
   }
 
@@ -84,9 +85,8 @@ function Todo() {
         {todos.length > 0 ? (
           todos.map((d) => (
             <TodoRow
-              key={d.ts}
-              id={d.ts}
-              realId={d.ref["@ref"].id}
+              key={d}
+              //realId={d.ref["@ref"].id}
               completed={d.data.completed}
               title={d.data.title}
               changeTodo={changeTodo}
